@@ -135,10 +135,46 @@
 <a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="foods.html">Foods</a>
 <a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="agriculture.html">Agriculture</a>
 </nav>
-<button class="bg-navy-deep text-on-primary px-6 py-3 rounded font-label-lg text-label-lg uppercase tracking-widest hover:bg-energy-blue transition-all duration-300">
+<div class="flex items-center gap-4">
+<button class="hidden sm:inline-block bg-navy-deep text-on-primary px-6 py-3 rounded font-label-lg text-label-lg uppercase tracking-widest hover:bg-energy-blue transition-all duration-300">
             Contact Us
-        </button></div>
+        </button>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
 </header>
+
+<!-- Mobile Drawer Backdrop -->
+<div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[90] hidden md:hidden"></div>
+
+<!-- Mobile Drawer/Overlay -->
+<div id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4">
+    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="index.html">Petroleum</a>
+    <a class="font-display-lg text-2xl uppercase tracking-wider text-gold-accent border-l-4 border-gold-accent pl-4 font-bold" href="gas.html">Gas</a>
+    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="refinery.html">Refinery</a>
+    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="foods.html">Foods</a>
+    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="agriculture.html">Agriculture</a>
+    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="leadership.html">Leadership</a>
+  </nav>
+  
+  <!-- Drawer Footer -->
+  <div class="flex flex-col items-center gap-4 border-t border-white/10 pt-6">
+    <a href="#footer" class="w-full text-center bg-gold-accent text-navy-deep font-label-lg py-3 rounded-lg uppercase tracking-wider hover:bg-gold-hover transition-colors duration-200 active:scale-95">Contact Us</a>
+    <p class="text-xs text-on-surface-variant/60">© 2024 Denigerleon Company.</p>
+  </div>
+</div>
 <!-- Hero Section -->
 <section class="relative w-full h-[819px] pt-20 overflow-hidden">
 <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" data-alt="A massive LNG carrier vessel navigating through deep blue ocean waters during a sunset. The sky is a mix of gold and deep navy, reflecting the corporate colors of Denigerleon. The lighting is cinematic, highlighting the industrial scale of the ship with high-key accents. The scene conveys institutional stability, global reach, and high-end energy distribution logistics in a modern, professional style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEulGQ3x9tAoTMQZTIc5F--eCzuF4ttcqSK7ceSzmf4_Nt0m-FOPSWFAtsOwW-zS52Yf088InhQe8gf8pKSnQmO5RcWLWtJzjdlTwJg229hsxAzfG0dfsbyrol2TPKUTgdcrlYOEVmGrBZl9wtcL_BaNjzqXHEiBqbA--f9eXT_V33yD5okHoLis88RVDTDaq_7KlyMNQ1TAy4ZTYJnOS3mBrm420dU-UXYT8U-LA0YhQCzI6dAvHjO503u56Uk1Ltd1qDa7Um_FYd')"></div>
@@ -315,7 +351,7 @@
 </div>
 </section>
 <!-- Footer -->
-<footer class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary">
+<footer id="footer" class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary">
 <div class="col-span-1 md:col-span-1">
 <a href="index.html" class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-6 block">DENIGERLEON</a>
 <p class="text-on-surface-variant font-body-md text-sm leading-relaxed mb-6">
@@ -374,4 +410,46 @@
             }
         });
     </script>
+
+<script>
+    // Mobile drawer toggle logic
+    (function() {
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const mobileDrawerBackdrop = document.getElementById('mobile-drawer-backdrop');
+
+        function openMenu() {
+            if (mobileDrawer) mobileDrawer.classList.remove('translate-x-full');
+            if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeMenu() {
+            if (mobileDrawer) mobileDrawer.classList.add('translate-x-full');
+            if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', openMenu);
+        }
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', closeMenu);
+        }
+
+        if (mobileDrawerBackdrop) {
+            mobileDrawerBackdrop.addEventListener('click', closeMenu);
+        }
+
+        // Close drawer on link clicks
+        if (mobileDrawer) {
+            const drawerLinks = mobileDrawer.querySelectorAll('nav a, a');
+            drawerLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        }
+    })();
+</script>
 </body></html>
