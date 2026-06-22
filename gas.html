@@ -129,16 +129,29 @@
 <header class="fixed top-0 w-full z-50 h-20 shadow-sm bg-surface-container-lowest dark:bg-navy-deep">
 <div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright uppercase">DENIGERLEON</a>
 <nav class="hidden md:flex items-center gap-8">
-<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="index.html">Petroleum</a>
-<a class="font-label-lg text-label-lg uppercase tracking-wider text-gold-accent border-b-2 border-gold-accent pb-1 transition-all duration-200 active:opacity-80" href="gas.html">Gas</a>
-<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="refinery.html">Refinery</a>
-<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="foods.html">Foods</a>
-<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="agriculture.html">Agriculture</a>
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="index.html">Home</a>
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="index.html">Petroleum</a>
+      <a class="text-gold-accent font-bold bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
 </nav>
 <div class="flex items-center gap-4">
-<button class="hidden sm:inline-block bg-navy-deep text-on-primary px-6 py-3 rounded font-label-lg text-label-lg uppercase tracking-widest hover:bg-energy-blue transition-all duration-300">
+<a href="contact.html" class="hidden sm:inline-block"><button class="bg-navy-deep text-on-primary px-6 py-3 rounded font-label-lg text-label-lg uppercase tracking-widest hover:bg-energy-blue transition-all duration-300">
             Contact Us
-        </button>
+        </button></a>
 
 <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
   <span class="material-symbols-outlined text-3xl">menu</span>
@@ -160,18 +173,29 @@
   </div>
   
   <!-- Drawer Links -->
-  <nav class="flex flex-col gap-6 my-auto items-start pl-4">
-    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="index.html">Petroleum</a>
-    <a class="font-display-lg text-2xl uppercase tracking-wider text-gold-accent border-l-4 border-gold-accent pl-4 font-bold" href="gas.html">Gas</a>
-    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="refinery.html">Refinery</a>
-    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="foods.html">Foods</a>
-    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="agriculture.html">Agriculture</a>
-    <a class="font-display-lg text-2xl uppercase tracking-wider text-surface-bright/80 hover:text-gold-accent transition-colors duration-200" href="about.html">About Us</a>
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="index.html">Home</a>
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
+        <span>Divisions</span>
+        <span id="mobile-divisions-arrow" class="rotate-180 material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+      </button>
+      <div id="mobile-divisions-list" class="flex flex-col gap-4 pl-4 mt-4 border-l border-white/10">
+        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="index.html">Petroleum</a>
+        <a class="text-gold-accent pl-2 border-l-2 border-gold-accent font-bold font-display-lg text-xl uppercase tracking-wider transition-colors" href="gas.html">Gas</a>
+        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="refinery.html">Refinery</a>
+        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="foods.html">Foods</a>
+        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="agriculture.html">Agriculture</a>
+      </div>
+    </div>
   </nav>
   
   <!-- Drawer Footer -->
   <div class="flex flex-col items-center gap-4 border-t border-white/10 pt-6">
-    <a href="#footer" class="w-full text-center bg-gold-accent text-navy-deep font-label-lg py-3 rounded-lg uppercase tracking-wider hover:bg-gold-hover transition-colors duration-200 active:scale-95">Contact Us</a>
+    <a href="contact.html" class="w-full text-center bg-gold-accent text-navy-deep font-label-lg py-3 rounded-lg uppercase tracking-wider hover:bg-gold-hover transition-colors duration-200 active:scale-95">Contact Us</a>
     <p class="text-xs text-on-surface-variant/60">© 2024 Denigerleon Company.</p>
   </div>
 </div>
@@ -443,11 +467,25 @@
             mobileDrawerBackdrop.addEventListener('click', closeMenu);
         }
 
-        // Close drawer on link clicks
+        // Close drawer on link clicks (except accordion toggle)
         if (mobileDrawer) {
             const drawerLinks = mobileDrawer.querySelectorAll('nav a, a');
             drawerLinks.forEach(link => {
                 link.addEventListener('click', closeMenu);
+            });
+        }
+
+        // Mobile divisions accordion toggle
+        const mobileDivisionsToggle = document.getElementById('mobile-divisions-toggle');
+        const mobileDivisionsList = document.getElementById('mobile-divisions-list');
+        const mobileDivisionsArrow = document.getElementById('mobile-divisions-arrow');
+
+        if (mobileDivisionsToggle && mobileDivisionsList && mobileDivisionsArrow) {
+            mobileDivisionsToggle.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent closing drawer on accordion click
+                const isHidden = mobileDivisionsList.classList.toggle('hidden');
+                mobileDivisionsList.classList.toggle('flex', !isHidden);
+                mobileDivisionsArrow.classList.toggle('rotate-180', !isHidden);
             });
         }
     })();
