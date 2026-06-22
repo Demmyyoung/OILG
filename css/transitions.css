@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* --- VIEW TRANSITIONS (Cross-Document) --- */
 @view-transition {
   navigation: auto;
