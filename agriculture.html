@@ -134,13 +134,13 @@
           },
         }
     </script>
+<link href="css/transitions.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest shadow-sm transition-all duration-200" id="top-nav">
-<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep uppercase tracking-tighter">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Agriculture</span></a>
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200" id="top-nav">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Agriculture</span></a>
 <nav class="hidden md:flex items-center gap-8">
-  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="index.html">Home</a>
   <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
   
   <!-- Divisions Dropdown -->
@@ -151,7 +151,7 @@
     </button>
     <!-- Dropdown Menu -->
     <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
-      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="index.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
@@ -167,7 +167,7 @@
   <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </div></div>
-</nav>
+</header>
 
 <!-- Mobile Drawer Backdrop -->
 <div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
@@ -184,7 +184,6 @@
   
   <!-- Drawer Links -->
   <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
-    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="index.html">Home</a>
     <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
     
     <!-- Mobile Accordion Divisions -->
@@ -193,8 +192,8 @@
         <span>Divisions: Agriculture</span>
         <span id="mobile-divisions-arrow" class="rotate-180 material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
       </button>
-      <div id="mobile-divisions-list" class="max-h-60 opacity-100 mt-4 flex flex-col gap-4 pl-4 border-l border-white/10 transition-all duration-300 ease-in-out">
-        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="index.html">Petroleum</a>
+      <div id="mobile-divisions-list" class="max-h-60 opacity-100 mt-4 flex flex-col gap-4 pl-4 mt-4 border-l border-white/10 transition-all duration-300 ease-in-out">
+        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="petroleum.html">Petroleum</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="gas.html">Gas</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="refinery.html">Refinery</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="foods.html">Foods</a>

@@ -1,0 +1,39 @@
+/* --- VIEW TRANSITIONS (Cross-Document) --- */
+@view-transition {
+  navigation: auto;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+@keyframes slide-from-right {
+  from { transform: translateX(20px); }
+}
+@keyframes slide-to-left {
+  to { transform: translateX(-20px); }
+}
+
+::view-transition-old(root) {
+  animation: 90ms ease-out both fade-out,
+             300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+::view-transition-new(root) {
+  animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+             300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+/* --- STANDARDIZED HEADER TRANSPARENCY & SHADOW --- */
+header.nav-scrolled, nav.nav-scrolled {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+}
+
+.dark header.nav-scrolled, .dark nav.nav-scrolled {
+  background: rgba(29, 31, 39, 0.95) !important;
+}

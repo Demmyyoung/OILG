@@ -3,7 +3,7 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Denigerleon | Global Energy &amp; Petroleum Leadership</title>
+<title>Denigerleon Company | Energy, Infrastructure &amp; Agriculture</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -124,24 +124,24 @@
             box-shadow: 0 12px 30px rgba(60, 92, 207, 0.15);
         }
     </style>
+<link href="css/transitions.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface font-body-md text-on-surface selection:bg-gold-accent selection:text-navy-deep">
 <!-- Top Navigation Bar -->
 <header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
-<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Petroleum</span></a>
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Corporate</span></a>
 <nav class="hidden md:flex items-center gap-8">
-  <a class="text-gold-accent border-b-2 border-gold-accent pb-1 font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="index.html">Home</a>
   <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
   
   <!-- Divisions Dropdown -->
   <div class="relative group">
     <button class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
-      <span>Divisions: Petroleum</span>
+      <span>Divisions</span>
       <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
     </button>
     <!-- Dropdown Menu -->
     <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
-      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="index.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
@@ -173,17 +173,16 @@
   
   <!-- Drawer Links -->
   <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
-    <a class="text-gold-accent border-l-4 border-gold-accent pl-4 font-bold font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="index.html">Home</a>
     <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
     
     <!-- Mobile Accordion Divisions -->
     <div class="w-full">
       <button id="mobile-divisions-toggle" class="text-surface-bright/80 hover:text-gold-accent flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
-        <span>Divisions: Petroleum</span>
+        <span>Divisions</span>
         <span id="mobile-divisions-arrow" class=" material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
       </button>
-      <div id="mobile-divisions-list" class="max-h-0 opacity-0 overflow-hidden flex flex-col gap-4 pl-4 border-l border-white/10 transition-all duration-300 ease-in-out">
-        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="index.html">Petroleum</a>
+      <div id="mobile-divisions-list" class="max-h-0 opacity-0 overflow-hidden flex-col gap-4 pl-4 mt-4 border-l border-white/10 transition-all duration-300 ease-in-out">
+        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="petroleum.html">Petroleum</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="gas.html">Gas</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="refinery.html">Refinery</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="foods.html">Foods</a>
@@ -200,200 +199,126 @@
 </div>
 <!-- Main Content Area -->
 <main class="pt-20">
-<!-- Hero Section -->
-<section class="relative h-[870px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" data-alt="A cinematic, wide-angle photograph of a massive industrial oil refinery and coastal tankers at sunset. The sky is a deep gradient of amber, violet, and navy blue. The metallic structures of the refinery are silhouetted against the vibrant sky, with warm industrial lights beginning to twinkle across the complex. The water reflects the golden glow of the sun and the industrial landscape. The overall mood is authoritative, grand, and established, emphasizing global energy leadership." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYAtIvqIZNbnQV34rF0TqOy7b4YVQFKNYE1OyfWGgMK187HDziwzsS9UVRyULoodyfpdmHDCb_JE-M3CSXnAJLZJRZL5HqqCeJsSXPCB6tMybyqO4CskdUrQZ0QUDCNHWpfSuZSzCzFQ6k1_qx32xbmWBRAWlrZ8Om-WnYzTtvVBaC7_K-oTz8rWyoa4OfGqSA2pIyI2FGjZw_HY97nv5SeoWbKJgui2rDuIAB2xz82Biyxd-kOipPnMkPrsiZZhwjyE5qfXy9hkyV')"></div>
-<div class="absolute inset-0 hero-gradient z-10"></div>
-<div class="container mx-auto px-margin-desktop relative z-20 max-w-container-max">
-<div class="max-w-3xl">
-<span class="font-label-lg text-label-lg text-gold-accent uppercase tracking-[0.2em] mb-stack-md block">Energy Infrastructure Excellence</span>
-<h1 class="font-display-lg text-display-lg text-surface-bright mb-stack-lg leading-[1.1]">The Power of Precision in Petroleum</h1>
-<p class="font-body-lg text-body-lg text-surface-container-high mb-stack-lg max-w-2xl opacity-90">
-                        Since 2007, Denigerleon has been a cornerstone of the Nigerian petrochemical sector, driving innovation and reliability in global energy distribution.
-                    </p>
-<div class="flex flex-wrap gap-stack-md">
-<a href="refinery.html" class="inline-block"><button class="bg-gold-accent text-navy-deep px-10 py-4 font-label-lg text-label-lg uppercase font-bold hover:bg-surface-bright transition-all duration-300 shadow-xl">Explore Division</button></a>
-<a href="about.html" class="inline-block"><button class="border-2 border-surface-bright/30 text-surface-bright px-10 py-4 font-label-lg text-label-lg uppercase font-bold hover:bg-surface-bright/10 backdrop-blur-sm transition-all duration-300">Global Operations</button></a>
-</div>
-</div>
-</div>
+<!-- Conglomerate Hero Section -->
+<section class="relative h-[85vh] flex items-center overflow-hidden bg-navy-deep text-on-primary">
+  <!-- Cinematic Background Image -->
+  <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-45" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpUWwlQsPLnMF9tBZNF35DEAiKMaSqPsfzPtPLWfu6s6Yn-145TzZH3Z-9lrUfzcmwOtqrowYd0bvlbnWev7_DKmwIqKUXtOZwBGB3nDKkm5t00baIczIZ6Uw5BZrN00pug1rYIfbAxUH554LJiC-ruDeH6HkFozQJs6EEI0j9fLnbloxo7TEDU4yW0VPOBuNgv_-3BRf3KXZWRzoG7gVtTQNkzLkRJJH7TPN_Z0S8krvbmsbD1UEygPJTLAy9LwUhgzdXzkmYOIWc')"></div>
+  <div class="absolute inset-0 hero-gradient z-10"></div>
+  <div class="container mx-auto px-margin-desktop relative z-20 max-w-container-max text-center md:text-left">
+    <div class="max-w-3xl">
+      <span class="font-label-lg text-label-lg text-gold-accent uppercase tracking-[0.2em] mb-stack-md block">DENIGERLEON COMPANY</span>
+      <h1 class="font-display-lg text-display-lg text-surface-bright mb-stack-lg leading-[1.1]">Global Leadership in Energy, Infrastructure & Agriculture</h1>
+      <p class="font-body-lg text-body-lg text-surface-container-high mb-stack-lg max-w-2xl opacity-90">
+        Established in 2007, Denigerleon is a diversified Nigerian conglomerate operating across Petrochemicals, Gas Marketing, Refinery Infrastructure, Foods, and Agriculture on the global stage.
+      </p>
+      <div class="flex flex-wrap gap-stack-md justify-center md:justify-start">
+        <a href="#divisions" class="inline-block"><button class="bg-gold-accent text-navy-deep px-10 py-4 font-label-lg text-label-lg uppercase font-bold hover:bg-surface-bright transition-all duration-300 shadow-xl">Explore Divisions</button></a>
+        <a href="about.html" class="inline-block"><button class="border-2 border-surface-bright/30 text-surface-bright px-10 py-4 font-label-lg text-label-lg uppercase font-bold hover:bg-surface-bright/10 backdrop-blur-sm transition-all duration-300">About Corporate</button></a>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Division Overview -->
-<section class="py-24 bg-surface-off-white">
-<div class="container mx-auto px-margin-desktop max-w-container-max">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-5">
-<h2 class="font-headline-lg text-headline-lg text-navy-deep mb-stack-md">Established in 2007, A Nigerian Leader.</h2>
-<div class="w-20 h-1 bg-gold-accent mb-stack-lg"></div>
-<p class="font-body-lg text-body-lg text-slate-gray mb-stack-lg">
-                            For nearly two decades, Denigerleon Company has maintained a strategic position in the downstream and midstream sectors. Our legacy is built on the pillars of transparency, safety, and operational excellence in every liter delivered.
-                        </p>
-<ul class="space-y-4">
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-energy-blue" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-label-lg text-label-lg text-navy-deep">Direct Refinery Procurement Partnerships</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-energy-blue" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-label-lg text-label-lg text-navy-deep">International Compliance Standards</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-energy-blue" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-label-lg text-label-lg text-navy-deep">Certified Logistics &amp; Storage Facilities</span>
-</li>
-</ul>
-</div>
-<div class="lg:col-span-7 grid grid-cols-2 gap-stack-md relative">
-<div class="absolute -top-12 -right-12 w-48 h-48 border-t-2 border-r-2 border-gold-accent opacity-30"></div>
-<div class="aspect-square bg-surface-container shadow-lg overflow-hidden rounded-lg">
-<img class="w-full h-full object-cover" data-alt="A detailed, macro-style image of clear, refined petroleum being sampled in a high-tech laboratory. The setting is clean and industrial with cool-toned blue lighting and warm gold reflections on the glassware. The liquid is bright and pure, symbolizing quality and precision. The visual style is premium and corporate, aligning with the energy-blue and gold-accent palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTe_GcuGcflT-3GDAzkNvbjfB-f12KIeNGSlN8Nj5W2Tn_ZgWG_H2vR2IsATCA4feHzeUls7iqRZMEQ8UJ_LhF2IolqfbtlaVAmP5D5DEmJ6CkneANBC-Kc0tnqlZuo_T_WOiW9CRLkATop9yM43GkmoGhBtmDy19juzpM2eeC3iiFQlxrOEYCrkxPdd5HcTuhrwBsLGTKOLcfgXnKlvxY4nEKw7LO3VIdq-g7TrBSOMUKfGQZgpD8-rhPojiZT4J3rXMRYOQlA-QV"/>
-</div>
-<div class="aspect-square bg-surface-container-high shadow-lg translate-y-12 overflow-hidden rounded-lg">
-<img class="w-full h-full object-cover" data-alt="A bird's eye view of a major Nigerian oil terminal with large silver storage tanks arranged in a precise geometric pattern. The scene is bathed in the bright midday sun of Africa, casting sharp shadows and highlighting the vast scale of operations. The color palette emphasizes clean whites, silver, and deep industrial grays, with subtle blue accents in the surrounding landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1sRb07f71TOTlHs5ajPBizLYkZLTF5PSwEGqOHh9-xOE5zIf53FCjEVKmVtKyyWQ3ksCgSkQNbPAwdDcOk_LtCO4mUzfhcqRCqla33di_7cleGAIpK9KD8C3bE8Oe1zKB8jRqXxS3VPHTPGeGZqQdNzKRGRX13jFr1oV9X3NRdIVb7Zd5VzyzKwQhqysTrBeYfLykYNAzg9e4zd3fpS1mVlrSMGtpaAnusDAtm1X1Wk42I4bgGJ-BTfk5HXRpTRGDmQJsF6C5ZwpD"/>
-</div>
-</div>
-</div>
-</div>
+
+<!-- Divisions Section -->
+<section id="divisions" class="py-24 bg-surface-off-white">
+  <div class="container mx-auto px-margin-desktop max-w-container-max">
+    <div class="text-center mb-16">
+      <span class="text-gold-accent font-label-lg uppercase tracking-[0.2em] mb-2 block">Our Business Units</span>
+      <h2 class="font-display-lg text-headline-lg text-navy-deep mb-4">Diversified Growth, Global Impact</h2>
+      <p class="text-slate-gray font-body-lg max-w-2xl mx-auto">Five core divisions driving industrial capability, energy security, and agricultural excellence across Africa and global markets.</p>
+      <div class="w-24 h-1 bg-gold-accent mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1: Petroleum -->
+      <div class="group relative overflow-hidden bg-white rounded-xl shadow-sm border border-outline-variant/50 transition-standard hover:-translate-y-2 hover:shadow-xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-navy-deep flex items-center justify-center rounded-lg mb-6 shrink-0 text-gold-accent">
+            <span class="material-symbols-outlined text-3xl">oil_barrel</span>
+          </div>
+          <h4 class="font-headline-md text-navy-deep text-2xl mb-4">Petroleum Division</h4>
+          <p class="text-slate-gray text-body-md mb-6">Procurement, marketing, sales, and global distribution of refined products including EN590, D6 Virgin Oil, PMS, and Bitumen.</p>
+        </div>
+        <a href="petroleum.html" class="text-energy-blue hover:text-gold-accent font-label-lg uppercase tracking-wider flex items-center gap-2 hover:gap-4 transition-all">Explore Division <span class="material-symbols-outlined text-sm">east</span></a>
+      </div>
+
+      <!-- Card 2: Gas Operation -->
+      <div class="group relative overflow-hidden bg-white rounded-xl shadow-sm border border-outline-variant/50 transition-standard hover:-translate-y-2 hover:shadow-xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-navy-deep flex items-center justify-center rounded-lg mb-6 shrink-0 text-gold-accent">
+            <span class="material-symbols-outlined text-3xl">local_gas_station</span>
+          </div>
+          <h4 class="font-headline-md text-navy-deep text-2xl mb-4">Gas Operations</h4>
+          <p class="text-slate-gray text-body-md mb-6">Direct marketing and international distribution of Liquefied Petroleum Gas (LPG) and Liquefied Natural Gas (LNG) from Nigeria.</p>
+        </div>
+        <a href="gas.html" class="text-energy-blue hover:text-gold-accent font-label-lg uppercase tracking-wider flex items-center gap-2 hover:gap-4 transition-all">Explore Division <span class="material-symbols-outlined text-sm">east</span></a>
+      </div>
+
+      <!-- Card 3: Refinery Development -->
+      <div class="group relative overflow-hidden bg-white rounded-xl shadow-sm border border-outline-variant/50 transition-standard hover:-translate-y-2 hover:shadow-xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-navy-deep flex items-center justify-center rounded-lg mb-6 shrink-0 text-gold-accent">
+            <span class="material-symbols-outlined text-3xl">factory</span>
+          </div>
+          <h4 class="font-headline-md text-navy-deep text-2xl mb-4">Refinery Infrastructure</h4>
+          <p class="text-slate-gray text-body-md mb-6">Establishing a state-of-the-art 100,000 bpd refinery in Lagos State, Nigeria, in partnership with global technical leaders.</p>
+        </div>
+        <a href="refinery.html" class="text-energy-blue hover:text-gold-accent font-label-lg uppercase tracking-wider flex items-center gap-2 hover:gap-4 transition-all">Explore Division <span class="material-symbols-outlined text-sm">east</span></a>
+      </div>
+
+      <!-- Card 4: Foods Division -->
+      <div class="group relative overflow-hidden bg-white rounded-xl shadow-sm border border-outline-variant/50 transition-standard hover:-translate-y-2 hover:shadow-xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-navy-deep flex items-center justify-center rounded-lg mb-6 shrink-0 text-gold-accent">
+            <span class="material-symbols-outlined text-3xl">restaurant</span>
+          </div>
+          <h4 class="font-headline-md text-navy-deep text-2xl mb-4">Foods Division</h4>
+          <p class="text-slate-gray text-body-md mb-6">Global trading, supply chain management, and distribution of essential food commodities (Sugar, Wheat, Corn, Coffee, Cocoa).</p>
+        </div>
+        <a href="foods.html" class="text-energy-blue hover:text-gold-accent font-label-lg uppercase tracking-wider flex items-center gap-2 hover:gap-4 transition-all">Explore Division <span class="material-symbols-outlined text-sm">east</span></a>
+      </div>
+
+      <!-- Card 5: Agriculture & Ranching -->
+      <div class="group relative overflow-hidden bg-white rounded-xl shadow-sm border border-outline-variant/50 transition-standard hover:-translate-y-2 hover:shadow-xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-navy-deep flex items-center justify-center rounded-lg mb-6 shrink-0 text-gold-accent">
+            <span class="material-symbols-outlined text-3xl">agriculture</span>
+          </div>
+          <h4 class="font-headline-md text-navy-deep text-2xl mb-4">Agriculture & Ranching</h4>
+          <p class="text-slate-gray text-body-md mb-6">High-yield commercial crop farming and professional livestock ranching utilizing modern agricultural techniques.</p>
+        </div>
+        <a href="agriculture.html" class="text-energy-blue hover:text-gold-accent font-label-lg uppercase tracking-wider flex items-center gap-2 hover:gap-4 transition-all">Explore Division <span class="material-symbols-outlined text-sm">east</span></a>
+      </div>
+
+    </div>
+  </div>
 </section>
-<!-- Services Section -->
-<section class="py-24 bg-navy-deep text-on-primary relative overflow-hidden">
-<!-- Subtle background branding -->
-<div class="absolute right-0 bottom-0 opacity-10 translate-x-1/4 translate-y-1/4 select-none">
-<span class="text-[300px] font-extrabold leading-none tracking-tighter">DL</span>
-</div>
-<div class="container mx-auto px-margin-desktop max-w-container-max relative z-10">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg mb-stack-sm">Core Petroleum Services</h2>
-<p class="text-on-primary-container max-w-xl mx-auto font-body-md opacity-80">Managing the complete lifecycle of energy assets with unparalleled expertise.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Service 1 -->
-<div class="p-8 border border-white/10 hover:bg-white/5 transition-all group">
-<div class="w-16 h-16 rounded-full bg-energy-blue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white text-3xl">inventory_2</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-stack-sm">Procuring</h3>
-<p class="text-on-primary-container font-body-md opacity-70">Sourcing premium grade fuels from global strategic refineries and regional hubs.</p>
-</div>
-<!-- Service 2 -->
-<div class="p-8 border border-white/10 hover:bg-white/5 transition-all group">
-<div class="w-16 h-16 rounded-full bg-gold-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-navy-deep text-3xl">campaign</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-stack-sm">Marketing</h3>
-<p class="text-on-primary-container font-body-md opacity-70">Strategic market positioning and trend analysis for refined petroleum products.</p>
-</div>
-<!-- Service 3 -->
-<div class="p-8 border border-white/10 hover:bg-white/5 transition-all group">
-<div class="w-16 h-16 rounded-full bg-energy-blue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white text-3xl">payments</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-stack-sm">Sales</h3>
-<p class="text-on-primary-container font-body-md opacity-70">Facilitating large-scale industrial transactions and contract management.</p>
-</div>
-<!-- Service 4 -->
-<div class="p-8 border border-white/10 hover:bg-white/5 transition-all group">
-<div class="w-16 h-16 rounded-full bg-gold-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-navy-deep text-3xl">local_shipping</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-stack-sm">Distribution</h3>
-<p class="text-on-primary-container font-body-md opacity-70">Seamless cross-border logistics and terminal-to-tanker operations.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Product Grid -->
-<section class="py-24 bg-surface">
-<div class="container mx-auto px-margin-desktop max-w-container-max">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-stack-md">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-navy-deep">Product Portfolio</h2>
-<p class="text-slate-gray font-body-md mt-2">Refined solutions for industrial, automotive, and specialized sectors.</p>
-</div>
-<div class="flex gap-4">
-<button class="p-3 bg-surface-container rounded-full hover:bg-energy-blue hover:text-white transition-colors">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<button class="p-3 bg-surface-container rounded-full hover:bg-energy-blue hover:text-white transition-colors">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Product 1 -->
-<div class="bg-surface-container-lowest p-6 card-hover-effect border border-outline-variant/30 flex flex-col h-full">
-<div class="mb-6 flex justify-between items-start">
-<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-energy-blue rounded-full">Fuel Oil</span>
-<span class="material-symbols-outlined text-gold-accent" style="font-variation-settings: 'FILL' 1;">science</span>
-</div>
-<h4 class="font-headline-md text-headline-md mb-stack-sm">EN590</h4>
-<p class="text-slate-gray font-body-md flex-grow">Ultra-low sulfur diesel compliant with European standards for modern engines.</p>
-<button class="mt-6 text-energy-blue font-label-lg flex items-center gap-2 hover:gap-4 transition-all">Specifications <span class="material-symbols-outlined text-sm">east</span></button>
-</div>
-<!-- Product 2 -->
-<div class="bg-surface-container-lowest p-6 card-hover-effect border border-outline-variant/30 flex flex-col h-full">
-<div class="mb-6 flex justify-between items-start">
-<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-energy-blue rounded-full">Heavy Oil</span>
-<span class="material-symbols-outlined text-gold-accent" style="font-variation-settings: 'FILL' 1;">oil_barrel</span>
-</div>
-<h4 class="font-headline-md text-headline-md mb-stack-sm">D6 Virgin Oil</h4>
-<p class="text-slate-gray font-body-md flex-grow">Primary feedstock for diverse refinery processes and maritime fuel blends.</p>
-<button class="mt-6 text-energy-blue font-label-lg flex items-center gap-2 hover:gap-4 transition-all">Specifications <span class="material-symbols-outlined text-sm">east</span></button>
-</div>
-<!-- Product 3 -->
-<div class="bg-surface-container-lowest p-6 card-hover-effect border border-outline-variant/30 flex flex-col h-full">
-<div class="mb-6 flex justify-between items-start">
-<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-energy-blue rounded-full">Motor Spirit</span>
-<span class="material-symbols-outlined text-gold-accent" style="font-variation-settings: 'FILL' 1;">local_gas_station</span>
-</div>
-<h4 class="font-headline-md text-headline-md mb-stack-sm">PMS</h4>
-<p class="text-slate-gray font-body-md flex-grow">Premium Motor Spirit refined for high-octane performance and cleaner combustion.</p>
-<button class="mt-6 text-energy-blue font-label-lg flex items-center gap-2 hover:gap-4 transition-all">Specifications <span class="material-symbols-outlined text-sm">east</span></button>
-</div>
-<!-- Product 4 -->
-<div class="bg-surface-container-lowest p-6 card-hover-effect border border-outline-variant/30 flex flex-col h-full">
-<div class="mb-6 flex justify-between items-start">
-<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-energy-blue rounded-full">Chemicals</span>
-<span class="material-symbols-outlined text-gold-accent" style="font-variation-settings: 'FILL' 1;">biotech</span>
-</div>
-<h4 class="font-headline-md text-headline-md mb-stack-sm">Petro Benzene</h4>
-<p class="text-slate-gray font-body-md flex-grow">Essential chemical building block for high-end petrochemical manufacturing.</p>
-<button class="mt-6 text-energy-blue font-label-lg flex items-center gap-2 hover:gap-4 transition-all">Specifications <span class="material-symbols-outlined text-sm">east</span></button>
-</div>
-</div>
-<!-- Secondary Row -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-gutter">
-<div class="bg-surface-container-lowest p-6 card-hover-effect border border-outline-variant/30">
-<h4 class="font-headline-md text-headline-md mb-stack-sm">Bitumen</h4>
-<p class="text-slate-gray font-body-md">High-viscosity petroleum used extensively for infrastructure and roofing.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 card-hover-effect border border-outline-variant/30">
-<h4 class="font-headline-md text-headline-md mb-stack-sm">Sulphur</h4>
-<p class="text-slate-gray font-body-md">Biproduct of refining, essential for fertilizers and industrial chemical synthesis.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 card-hover-effect border border-outline-variant/30">
-<h4 class="font-headline-md text-headline-md mb-stack-sm">Base Oil</h4>
-<p class="text-slate-gray font-body-md">Refined to strict tolerances for the production of high-performance lubricants.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Call to Action Banner -->
-<section class="py-20">
-<div class="container mx-auto px-margin-desktop max-w-container-max">
-<div class="bg-surface-container-high p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-stack-lg">
-<div class="relative z-10">
-<h2 class="font-headline-lg text-headline-lg text-navy-deep mb-2">Ready to secure your energy supply?</h2>
-<p class="text-slate-gray font-body-lg">Request a custom quote or contact our global logistics team today.</p>
-</div>
-<div class="flex gap-4 relative z-10">
-<button class="bg-navy-deep text-white px-8 py-3 font-label-lg rounded shadow-lg hover:shadow-xl transition-all">Get a Quote</button>
-<button class="bg-white text-navy-deep border border-navy-deep/20 px-8 py-3 font-label-lg rounded hover:bg-surface-container-low transition-all">Download Catalog</button>
-</div>
-<!-- Decorative element -->
-<div class="absolute right-0 top-0 w-64 h-full bg-gold-accent/5 -skew-x-12"></div>
-</div>
-</div>
+
+<!-- Conglomerate Overview Section -->
+<section class="py-24 bg-navy-deep text-on-primary relative overflow-hidden border-t border-white/5">
+  <div class="container mx-auto px-margin-desktop max-w-container-max flex flex-col lg:flex-row gap-16 items-center">
+    <div class="lg:w-1/2">
+      <span class="text-gold-accent font-label-lg uppercase tracking-[0.2em] mb-4 block">Institutional Stewardship</span>
+      <h3 class="font-display-lg text-headline-lg mb-6 leading-tight">Nearly Two Decades of Strategic Excellence</h3>
+      <p class="text-on-primary-container text-body-lg mb-8 opacity-80">
+        Since our founding in 2007, Denigerleon has built a footprint connecting African resources and agricultural yield directly to regional and international markets with safety and strict regulatory compliance.
+      </p>
+      <div class="grid grid-cols-2 gap-8 text-center md:text-left">
+        <div class="p-6 bg-white/5 rounded-lg border border-white/10">
+          <div class="text-4xl font-extrabold text-gold-accent mb-2">2007</div>
+          <div class="text-xs uppercase tracking-wider text-on-primary-container opacity-85">Established Year</div>
+        </div>
+        <div class="p-6 bg-white/5 rounded-lg border border-white/10">
+          <div class="text-4xl font-extrabold text-gold-accent mb-2">5</div>
+          <div class="text-xs uppercase tracking-wider text-on-primary-container opacity-85">Business Sectors</div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/2">
+      <img class="rounded-lg shadow-2xl border border-white/10 w-full object-cover aspect-[4/3]" data-alt="A modern container port and shipping terminal with cranes loading a large cargo ship at sunset, reflecting global commerce." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYtshDXHhMkPkc02oTdlwZAiuKayqbazbPIvR5GcG4AP9DRpvynx2w8LZBVc8ZQ4wqI8n0Sfrh2mJKXR1ERAtAQ8AhVT0UcoRAVA9kRTKTnCpA5tQkf-bKa-6cqf3s-DL6UKLIhucaTwWBOfqrx9XHp0TSI6cSyPUW48_CNxLfIrKErGasb6ed3RK9kCjls9iKP7gzDq3v7ApBF2lN4SYCHe-dDV26CiOSqx3NQlXA7Kux6Qxk52BaaIPFQfbXjOmyzKSQSCMb_Y8t"/>
+    </div>
+  </div>
 </section>
 </main>
 <!-- Footer -->
@@ -437,7 +362,7 @@
 </div>
 </footer>
 <!-- WhatsApp Floating Button -->
-<a class="fixed bottom-8 right-8 z-[100] flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/#" target="_blank">
+<a class="fixed bottom-8 right-8 z-[100] flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/2349066059151" target="_blank">
 <svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.89-11.891 11.89-2.015 0-3.991-.511-5.741-1.486l-6.254 1.705zm6.744-4.225l.403.239c1.439.856 3.096 1.309 4.792 1.309 5.067 0 9.189-4.123 9.189-9.189 0-2.456-.957-4.765-2.695-6.502s-4.047-2.693-6.501-2.693c-5.068 0-9.19 4.122-9.19 9.189 0 1.794.522 3.541 1.512 5.053l.269.412-1.004 3.665 3.735-.983zm10.024-5.38c-.28-.14-1.657-.818-1.913-.911-.257-.094-.443-.14-.63.14-.187.28-.723.911-.886 1.097-.163.187-.327.21-.607.07-.28-.14-1.183-.437-2.253-1.392-.833-.742-1.394-1.658-1.557-1.939-.163-.28-.017-.431.122-.571.126-.126.28-.327.42-.49.14-.163.187-.28.28-.467.094-.187.047-.35-.023-.49-.07-.14-.63-1.518-.863-2.079-.227-.547-.457-.472-.63-.481-.163-.008-.35-.01-.537-.01-.187 0-.49.07-.747.35-.257.28-.981.958-.981 2.336 0 1.378 1.004 2.71 1.144 2.897.14.187 1.977 3.018 4.79 4.223.67.287 1.192.458 1.599.587.673.214 1.285.183 1.769.111.539-.08 1.657-.677 1.89-1.332.233-.654.233-1.215.163-1.332-.07-.117-.257-.187-.537-.327z"></path>
 </svg>
@@ -446,15 +371,15 @@
         </span>
 </a>
 <script>
-        // Micro-interaction for navigation
+        // Standardized header scroll shadow transition
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-md');
-                header.classList.remove('bg-surface-container-lowest');
-            } else {
-                header.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-md');
-                header.classList.add('bg-surface-container-lowest');
+            const header = document.querySelector('header') || document.getElementById('top-nav');
+            if (header) {
+                if (window.scrollY > 50) {
+                    header.classList.add('nav-scrolled');
+                } else {
+                    header.classList.remove('nav-scrolled');
+                }
             }
         });
     </script>

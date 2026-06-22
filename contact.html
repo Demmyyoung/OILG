@@ -118,24 +118,24 @@
         .executive-card:hover .overlay { opacity: 1; }
         .transition-standard { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
+<link href="css/transitions.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface-off-white text-on-surface font-body-md selection:bg-gold-accent selection:text-navy-deep">
 <!-- Top Navigation Bar (Shared Component) -->
-<header class="fixed top-0 w-full z-50 h-20 shadow-sm bg-surface-container-lowest dark:bg-navy-deep">
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
 <div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2 font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright"><span>DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Contact</span></a>
 <nav class="hidden md:flex items-center gap-8">
-  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="index.html">Home</a>
-  <a class="text-gold-accent border-b-2 border-gold-accent pb-1 font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
   
   <!-- Divisions Dropdown -->
   <div class="relative group">
-    <button class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
       <span>Divisions</span>
       <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
     </button>
     <!-- Dropdown Menu -->
     <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
-      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="index.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
       <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
@@ -170,17 +170,16 @@
   
   <!-- Drawer Links -->
   <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
-    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="index.html">Home</a>
-    <a class="text-gold-accent border-l-4 border-gold-accent pl-4 font-bold font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
     
     <!-- Mobile Accordion Divisions -->
     <div class="w-full">
-      <button id="mobile-divisions-toggle" class="text-surface-bright/80 hover:text-gold-accent flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
         <span>Divisions</span>
-        <span id="mobile-divisions-arrow" class=" material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+        <span id="mobile-divisions-arrow" class="rotate-180 material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
       </button>
-      <div id="mobile-divisions-list" class="max-h-0 opacity-0 overflow-hidden flex flex-col gap-4 pl-4 border-l border-white/10 transition-all duration-300 ease-in-out">
-        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="index.html">Petroleum</a>
+      <div id="mobile-divisions-list" class="max-h-60 opacity-100 mt-4 flex flex-col gap-4 pl-4 mt-4 border-l border-white/10 transition-all duration-300 ease-in-out">
+        <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="petroleum.html">Petroleum</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="gas.html">Gas</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="refinery.html">Refinery</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="foods.html">Foods</a>
@@ -228,7 +227,7 @@
           <div>
             <h4 class="font-headline-md text-navy-deep mb-2">Lagos Headquarters</h4>
             <p class="text-slate-gray text-body-md mb-2">15 Alfred Rewane Road, Ikoyi, Lagos, Nigeria</p>
-            <p class="text-slate-gray text-body-md font-bold">Tel: +234 (0) 1 460 0000</p>
+            <p class="text-slate-gray text-body-md font-bold">Tel: +234 906 605 9151</p>
           </div>
         </div>
 
@@ -240,7 +239,7 @@
           <div>
             <h4 class="font-headline-md text-navy-deep mb-2">London Office (Energy & Commodities)</h4>
             <p class="text-slate-gray text-body-md mb-2">30 St Mary Axe (The Gherkin), London, EC3A 8EP, United Kingdom</p>
-            <p class="text-slate-gray text-body-md font-bold">Tel: +44 20 7074 0000</p>
+            <p class="text-slate-gray text-body-md font-bold">Tel: +234 904 988 7032</p>
           </div>
         </div>
 
@@ -248,8 +247,8 @@
         <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h5 class="text-navy-deep font-bold mb-2">General Inquiries</h5>
-            <p class="text-slate-gray text-body-sm mb-1">info@denigerleon.com</p>
-            <p class="text-slate-gray text-body-sm font-bold">support@denigerleon.com</p>
+            <p class="text-slate-gray text-body-sm mb-1">denigerleoncompany@gmail.com</p>
+            <p class="text-slate-gray text-body-sm font-bold">denigerleoncompany@gmail.com</p>
           </div>
           <div>
             <h5 class="text-navy-deep font-bold mb-2">Partnership Relations</h5>
@@ -325,7 +324,7 @@
 </div>
 <div class="flex flex-col gap-4">
 <h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Connect</h5>
-<p class="text-on-surface-variant font-body-md">Global Headquarters<br/>London | Houston | Singapore</p>
+<p class="text-on-surface-variant font-body-md">Global Headquarters<br/>Lagos | London | Houston<br/>denigerleoncompany@gmail.com<br/>+234 906 605 9151<br/>+234 904 988 7032</p>
 <div class="flex gap-4 mt-2">
 <span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">language</span>
 <span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">share</span>
@@ -340,22 +339,16 @@
 </div>
 </footer>
 <script>
-        // Micro-interaction for scroll reveal header
-        let lastScroll = 0;
-        const header = document.querySelector('header');
+        // Standardized header scroll shadow transition
         window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            if (currentScroll <= 0) {
-                header.classList.remove('shadow-lg');
-                return;
+            const header = document.querySelector('header') || document.getElementById('top-nav');
+            if (header) {
+                if (window.scrollY > 50) {
+                    header.classList.add('nav-scrolled');
+                } else {
+                    header.classList.remove('nav-scrolled');
+                }
             }
-            if (currentScroll > lastScroll) {
-                header.style.transform = 'translateY(-100%)';
-            } else {
-                header.style.transform = 'translateY(0)';
-                header.classList.add('shadow-lg');
-            }
-            lastScroll = currentScroll;
         });
 
         // Simple hover effect for director cards
