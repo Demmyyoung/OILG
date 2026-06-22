@@ -1,0 +1,759 @@
+========================================
+FILE: index.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Corporate</span></a>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-stack-md">
+<a href="contact.html" class="hidden sm:inline-block"><button class="font-label-lg text-label-lg uppercase px-6 py-2 bg-navy-deep text-on-primary rounded transition-all duration-200 active:opacity-80">Contact Us</button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-surface-bright/80 hover:text-gold-accent flex items-center justify
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep dark:bg-primary-container text-on-primary">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md font-bold text-surface-container-lowest">DENIGERLEON</span>
+<p class="text-on-surface-variant font-body-md max-w-xs opacity-70">Leading the future of energy and agriculture from the heart of Nigeria to the global stage.</p>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg text-gold-accent uppercase mb-6 tracking-widest">Divisions</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="index.html">Petroleum</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Gas &amp; Power</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="agriculture.html">Agriculture</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Food Production</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg text-gold-accent uppercase mb-6 tracking-widest">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Sustainability</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Investor Relations</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Global Logistics</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg text-gold-accent uppercase mb-6 tracking-widest">Legal</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Compliance</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant font-body-md opacity-60">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-gold-accent" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-surface-variant hover:text-gold-accent" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</footer>
+
+========================================
+FILE: about.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2 font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright"><span>DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">About Us</span></a>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-gold-accent border-b-2 border-gold-accent pb-1 font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-6">
+
+<a href="contact.html" class="hidden sm:inline-block"><button class="bg-navy-deep text-on-primary px-6 py-2.5 rounded-lg font-label-lg uppercase tracking-widest hover:bg-gold-accent transition-standard">
+                Contact Us
+            </button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-gold-accent border-l-4 border-gold-accent pl-4 font-bold font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-surface-bright/80 hover:text-gold-accent flex item
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-64 grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-6 block">DENIGERLEON</a>
+<p class="text-on-surface-variant font-body-md mb-6">Powering global industry through precision, reliability, and institutional excellence across energy and food sectors.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Corporate</h5>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Sustainability</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Investor Relations</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Legal</h5>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Compliance</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Connect</h5>
+<p class="text-on-surface-variant font-body-md">Global Headquarters<br/>Lagos | London | Houston<br/>denigerleoncompany@gmail.com<br/>+234 906 605 9151<br/>+234 904 988 7032</p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">language</span>
+<span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">share</span>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-white/10 flex justify-between items-center">
+<p class="text-on-surface-variant font-body-md">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-on-surface-variant text-sm">ISO 9001 Certified</span>
+<span class="text-on-surface-variant text-sm">Global Safety Rating: AA+</span>
+</div>
+</div>
+</footer>
+
+========================================
+FILE: contact.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2 font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright"><span>DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Contact</span></a>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-6">
+
+<a href="contact.html" class="hidden sm:inline-block"><button class="bg-navy-deep text-on-primary px-6 py-2.5 rounded-lg font-label-lg uppercase tracking-widest hover:bg-gold-accent transition-standard">
+                Contact Us
+            </button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full fon
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-64 grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-6 block">DENIGERLEON</a>
+<p class="text-on-surface-variant font-body-md mb-6">Powering global industry through precision, reliability, and institutional excellence across energy and food sectors.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Corporate</h5>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Sustainability</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Investor Relations</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Legal</h5>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Compliance</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Connect</h5>
+<p class="text-on-surface-variant font-body-md">Global Headquarters<br/>Lagos | London | Houston<br/>denigerleoncompany@gmail.com<br/>+234 906 605 9151<br/>+234 904 988 7032</p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">language</span>
+<span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">share</span>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-white/10 flex justify-between items-center">
+<p class="text-on-surface-variant font-body-md">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-on-surface-variant text-sm">ISO 9001 Certified</span>
+<span class="text-on-surface-variant text-sm">Global Safety Rating: AA+</span>
+</div>
+</div>
+</footer>
+
+========================================
+FILE: agriculture.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200" id="top-nav">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Agriculture</span></a>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions: Agriculture</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-gold-accent font-bold bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-stack-md">
+
+<a href="contact.html" class="hidden sm:inline-block"><button class="bg-navy-deep text-on-primary px-stack-lg py-3 rounded-DEFAULT font-label-lg text-label-lg uppercase tracking-wider hover:bg-opacity-90 transition-all active:opacity-80">Contact Us</button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full fon
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary border-t border-white/5">
+<div class="col-span-1 md:col-span-1">
+<p class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-stack-md uppercase">DENIGERLEON</p>
+<p class="text-on-surface-variant font-body-md pr-8">A global leader in industrial energy, refining, and agricultural development, committed to long-term sustainability and operational excellence.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-stack-md">Sectors</h4>
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Petroleum &amp; Gas</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Refinery Ops</a>
+<a class="text-gold-accent font-bold font-body-md" href="#">Agricultural Assets</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Food Production</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-stack-md">Company</h4>
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Sustainability</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Investor Relations</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Careers</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Media Center</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-stack-md">Connect</h4>
+<div class="flex flex-col gap-3">
+<p class="text-on-surface-variant font-body-md">Headquarters: Global Trade Tower, Level 45</p>
+<p class="text-on-surface-variant font-body-md">contact@denigerleon.com</p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">public</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">mail</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">description</span>
+</div>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<p class="text-on-surface-variant text-body-md">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-stack-lg">
+<a class="text-on-surface-variant text-body-md hover:text-surface-bright transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant text-body-md hover:text-surface-bright transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+
+========================================
+FILE: foods.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><div class="flex items-center gap-stack-md">
+<span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright">DENIGERLEON</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions: Foods</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-gold-accent font-bold bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="hidden sm:inline-block"><button class="bg-navy-deep text-on-primary px-stack-lg py-2.5 rounded-lg font-label-lg uppercase tracking-widest hover:bg-gold-accent transition-all duration-300 active:opacity-80">
+            Contact Us
+        </button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full fon
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary">
+<div class="md:col-span-1">
+<span class="font-headline-md text-headline-md font-bold text-surface-container-lowest block mb-4">DENIGERLEON</span>
+<p class="font-body-md text-on-surface-variant max-w-xs">
+                A global leader in energy, industrial manufacturing, and food commodity supply. Excellence in every shipment.
+            </p>
+</div>
+<div>
+<h5 class="font-label-lg uppercase tracking-widest text-gold-accent mb-6">Quick Links</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Petroleum Division</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Gas Infrastructure</a></li>
+<li><a class="font-body-md text-gold-accent font-bold transition-colors" href="#">Foods Portfolio</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Agriculture Logistics</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg uppercase tracking-widest text-gold-accent mb-6">Company</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="about.html">Sustainability</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="about.html">Careers</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="about.html">Investor Relations</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg uppercase tracking-widest text-gold-accent mb-6">Contact</h5>
+<p class="font-body-md text-on-surface-variant mb-4">Global Headquarters<br/>Business District Phase 1<br/>London, UK</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent">share</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent">mail</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent">call</span>
+</div>
+</div>
+<div class="md:col-span-4 border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-on-surface-variant">
+<p class="font-body-md">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-gutter mt-4 md:mt-0">
+<span class="text-sm">ISO 9001:2015</span>
+<span class="text-sm">ISO 22000</span>
+<span class="text-sm">HACCP Certified</span>
+</div>
+</div>
+</footer>
+
+========================================
+FILE: gas.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2 font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright uppercase"><span>DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Gas</span></a>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions: Gas</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-gold-accent font-bold bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="hidden sm:inline-block"><button class="bg-navy-deep text-on-primary px-6 py-3 rounded font-label-lg text-label-lg uppercase tracking-widest hover:bg-energy-blue transition-all duration-300">
+            Contact Us
+        </button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full fon
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-6 block">DENIGERLEON</a>
+<p class="text-on-surface-variant font-body-md text-sm leading-relaxed mb-6">
+                A leading global conglomerate committed to excellence in energy, agriculture, and industrial production. Headquartered in Nigeria, serving the world.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-gold-accent transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-gold-accent transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="hub">hub</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-gold-accent font-bold mb-6">Business Sectors</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="index.html">Petroleum Trading</a></li>
+<li><a class="text-gold-accent font-bold" href="gas.html">Gas Operations</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="refinery.html">Refining Services</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="agriculture.html">Agri-Products</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-gold-accent font-bold mb-6">Corporate</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="about.html">Sustainability</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="about.html">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="about.html">Investor Relations</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="about.html">Media Center</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-gold-accent font-bold mb-6">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Terms of Service</a></li>
+<li class="pt-6">
+<div class="text-label-sm text-slate-gray">© 2024 Denigerleon Company. All rights reserved.</div>
+</li>
+</ul>
+</div>
+</footer>
+
+========================================
+FILE: petroleum.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Petroleum</span></a>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions: Petroleum</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-gold-accent font-bold bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-stack-md">
+<a href="contact.html" class="hidden sm:inline-block"><button class="font-label-lg text-label-lg uppercase px-6 py-2 bg-navy-deep text-on-primary rounded transition-all duration-200 active:opacity-80">Contact Us</button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full fon
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep dark:bg-primary-container text-on-primary">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md font-bold text-surface-container-lowest">DENIGERLEON</span>
+<p class="text-on-surface-variant font-body-md max-w-xs opacity-70">Leading the future of energy and agriculture from the heart of Nigeria to the global stage.</p>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg text-gold-accent uppercase mb-6 tracking-widest">Divisions</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="index.html">Petroleum</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Gas &amp; Power</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="agriculture.html">Agriculture</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Food Production</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg text-gold-accent uppercase mb-6 tracking-widest">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Sustainability</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="about.html">Investor Relations</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Global Logistics</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg text-gold-accent uppercase mb-6 tracking-widest">Legal</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Compliance</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant font-body-md opacity-60">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-gold-accent" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-surface-variant hover:text-gold-accent" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</footer>
+
+========================================
+FILE: refinery.html
+
+--- HEADER ---
+<header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Refinery</span></a>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
+  <!-- Divisions Dropdown -->
+  <div class="relative group">
+    <button class="text-gold-accent flex items-center gap-1 transition-colors duration-200 focus:outline-none py-2 font-label-lg text-label-lg uppercase tracking-wider">
+      <span>Divisions: Refinery</span>
+      <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+    </button>
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-2 w-52 bg-navy-deep/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible transform translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 py-2">
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="petroleum.html">Petroleum</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="gas.html">Gas</a>
+      <a class="text-gold-accent font-bold bg-white/5 block px-4 py-2 text-sm transition-colors" href="refinery.html">Refinery</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="foods.html">Foods</a>
+      <a class="text-surface-bright/80 hover:text-gold-accent hover:bg-white/5 block px-4 py-2 text-sm transition-colors" href="agriculture.html">Agriculture</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center gap-6">
+
+<a href="contact.html" class="hidden sm:inline-block"><button class="bg-navy-deep text-on-primary px-6 py-2 rounded-lg font-label-lg text-label-lg uppercase hover:bg-energy-blue transition-all">Contact Us</button></a>
+
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-navy-deep dark:text-surface-bright hover:text-gold-accent transition-colors duration-200 focus:outline-none" aria-label="Toggle mobile menu">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div></div>
+</header>
+
+--- MOBILE DRAWER (START) ---
+id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+  <!-- Drawer Header -->
+  <div class="flex justify-between items-center border-b border-white/10 pb-4">
+    <span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span>
+    <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-surface-bright hover:text-gold-accent focus:outline-none transition-colors duration-200" aria-label="Close mobile menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  
+  <!-- Drawer Links -->
+  <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
+    <!-- Mobile Accordion Divisions -->
+    <div class="w-full">
+      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full fon
+
+--- FOOTER ---
+<footer id="footer" class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep dark:bg-primary-container text-on-primary">
+<div class="flex flex-col gap-6">
+<span class="font-headline-md text-headline-md font-bold text-surface-container-lowest uppercase tracking-tighter">DENIGERLEON</span>
+<p class="font-body-md text-body-md opacity-60">A global conglomerate leading innovation in energy and agricultural production across three continents.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold-accent transition-colors" href="#"><span class="material-symbols-outlined text-sm">language</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold-accent transition-colors" href="#"><span class="material-symbols-outlined text-sm">hub</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold-accent transition-colors" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-6">Sectors</h5>
+<ul class="flex flex-col gap-4 text-on-surface-variant">
+<li><a class="hover:text-surface-bright transition-colors" href="#">Petroleum & Mining</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="#">Gas Processing</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="#">Refinery & Logistics</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="#">Food Processing</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="#">Agriculture Tech</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-6">Company</h5>
+<ul class="flex flex-col gap-4 text-on-surface-variant">
+<li><a class="hover:text-surface-bright transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="about.html">Sustainability</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="about.html">Careers</a></li>
+<li><a class="hover:text-surface-bright transition-colors" href="about.html">Investor Relations</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-6">Headquarters</h5>
+<p class="text-on-surface-variant mb-4">Lagos, Nigeria<br/>Victoria Island Business District</p>
+<p class="text-on-surface-variant">London, United Kingdom<br/>Canary Wharf Finance Center</p>
+<div class="mt-8 pt-8 border-t border-white/10">
+<p class="font-body-md text-body-md opacity-40">© 2024 Denigerleon Company. All rights reserved.</p>
+</div>
+</div>
+</footer>

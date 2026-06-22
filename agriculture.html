@@ -139,9 +139,12 @@
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- Top Navigation Bar -->
 <header class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest dark:bg-navy-deep shadow-sm transition-all duration-200" id="top-nav">
-<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Agriculture</span></a>
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8">
+<a href="index.html" class="flex items-center gap-2"><span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright tracking-tight">DENIGERLEON</span><span class="text-xs font-bold text-gold-accent tracking-widest uppercase border-l border-black/10 dark:border-white/10 pl-2 ml-1 shrink-0">Agriculture</span></a>
 <nav class="hidden md:flex items-center gap-8">
+  <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="index.html">Home</a>
   <a class="text-slate-gray dark:text-on-surface-variant hover:text-gold-accent font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="about.html">About Us</a>
+  
   
   <!-- Divisions Dropdown -->
   <div class="relative group">
@@ -184,7 +187,9 @@
   
   <!-- Drawer Links -->
   <nav class="flex flex-col gap-6 my-auto items-start pl-4 w-full">
+    <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="index.html">Home</a>
     <a class="text-surface-bright/80 hover:text-gold-accent font-display-lg text-2xl uppercase tracking-wider transition-colors duration-200" href="about.html">About Us</a>
+    
     
     <!-- Mobile Accordion Divisions -->
     <div class="w-full">
@@ -407,7 +412,7 @@
 <a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Petroleum &amp; Gas</a>
 <a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Refinery Ops</a>
 <a class="text-gold-accent font-bold font-body-md" href="#">Agricultural Assets</a>
-<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Food Production</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="foods.html">Food Production</a>
 </div>
 </div>
 <div class="col-span-1">
@@ -421,14 +426,7 @@
 </div>
 <div class="col-span-1">
 <h4 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-stack-md">Connect</h4>
-<div class="flex flex-col gap-3">
-<p class="text-on-surface-variant font-body-md">Headquarters: Global Trade Tower, Level 45</p>
-<p class="text-on-surface-variant font-body-md">contact@denigerleon.com</p>
-<div class="flex gap-4 mt-2">
-<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">public</span>
-<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">mail</span>
-<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">description</span>
-</div>
+<p class="text-on-surface-variant font-body-md">Global Headquarters<br/>28 Satellite Town, FESTAC, Lagos<br/>denigerleoncompany@gmail.com<br/>+234 906 605 9151<br/>+234 904 988 7032</p>
 </div>
 </div>
 <div class="col-span-1 md:col-span-4 mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-stack-md">
@@ -525,4 +523,13 @@
         }
     })();
 </script>
+<!-- WhatsApp Floating Button -->
+<a class="fixed bottom-8 right-8 z-[100] flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/2349066059151" target="_blank">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.89-11.891 11.89-2.015 0-3.991-.511-5.741-1.486l-6.254 1.705zm6.744-4.225l.403.239c1.439.856 3.096 1.309 4.792 1.309 5.067 0 9.189-4.123 9.189-9.189 0-2.456-.957-4.765-2.695-6.502s-4.047-2.693-6.501-2.693c-5.068 0-9.19 4.122-9.19 9.189 0 1.794.522 3.541 1.512 5.053l.269.412-1.004 3.665 3.735-.983zm10.024-5.38c-.28-.14-1.657-.818-1.913-.911-.257-.094-.443-.14-.63.14-.187.28-.723.911-.886 1.097-.163.187-.327.21-.607.07-.28-.14-1.183-.437-2.253-1.392-.833-.742-1.394-1.658-1.557-1.939-.163-.28-.017-.431.122-.571.126-.126.28-.327.42-.49.14-.163.187-.28.28-.467.094-.187.047-.35-.023-.49-.07-.14-.63-1.518-.863-2.079-.227-.547-.457-.472-.63-.481-.163-.008-.35-.01-.537-.01-.187 0-.49.07-.747.35-.257.28-.981.958-.981 2.336 0 1.378 1.004 2.71 1.144 2.897.14.187 1.977 3.018 4.79 4.223.67.287 1.192.458 1.599.587.673.214 1.285.183 1.769.111.539-.08 1.657-.677 1.89-1.332.233-.654.233-1.215.163-1.332-.07-.117-.257-.187-.537-.327z"></path>
+</svg>
+<span class="absolute -top-12 right-0 bg-navy-deep text-white text-[10px] py-1 px-3 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity font-bold uppercase tracking-wider shadow-lg pointer-events-none">
+            Chat with an Expert
+        </span>
+</a>
 </body></html>
