@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agriculture - Denigerleon Company</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .bento-item {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "energy-blue": "#3C5CCF",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "surface-container-high": "#e0e8fb",
+                      "error-container": "#ffdad6",
+                      "primary-fixed-dim": "#c5c6d1",
+                      "surface-dim": "#d2daec",
+                      "secondary-fixed-dim": "#e9c176",
+                      "on-primary-fixed": "#191b23",
+                      "secondary-container": "#fed488",
+                      "on-secondary-fixed": "#261900",
+                      "surface-container-low": "#f0f3ff",
+                      "on-primary-fixed-variant": "#45464f",
+                      "inverse-on-surface": "#ecf1ff",
+                      "background": "#f9f9ff",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#c7c6cb",
+                      "on-tertiary-fixed": "#001453",
+                      "tertiary-fixed": "#dde1ff",
+                      "surface-container": "#e7eeff",
+                      "error": "#ba1a1a",
+                      "surface-tint": "#5c5e67",
+                      "on-tertiary-container": "#607ff3",
+                      "on-primary": "#ffffff",
+                      "primary": "#05070e",
+                      "inverse-primary": "#c5c6d1",
+                      "primary-container": "#1d1f27",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed-dim": "#b7c4ff",
+                      "on-primary-container": "#858690",
+                      "surface-bright": "#f9f9ff",
+                      "tertiary-container": "#00175b",
+                      "on-tertiary-fixed-variant": "#113aaf",
+                      "secondary": "#775a19",
+                      "on-background": "#141c29",
+                      "inverse-surface": "#29313f",
+                      "primary-fixed": "#e1e2ed",
+                      "gold-accent": "#C5A059",
+                      "surface-container-highest": "#dbe3f5",
+                      "on-error": "#ffffff",
+                      "navy-deep": "#1D1F27",
+                      "on-surface-variant": "#46464b",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#000420",
+                      "on-secondary-container": "#785a1a",
+                      "secondary-fixed": "#ffdea5",
+                      "outline": "#77767c",
+                      "slate-gray": "#6A7282",
+                      "on-surface": "#141c29",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-variant": "#dbe3f5",
+                      "surface": "#f9f9ff",
+                      "surface-off-white": "#F8F8F8",
+                      "nature-green": "#2D5A27"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "stack-lg": "32px",
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "margin-tablet": "32px",
+                      "stack-sm": "8px",
+                      "stack-md": "16px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "display-lg-mobile": ["Montserrat"],
+                      "label-sm": ["Inter"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "body-md": ["Inter"],
+                      "label-lg": ["Inter"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 h-20 bg-surface-container-lowest shadow-sm transition-all duration-200" id="top-nav">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><div class="flex items-center gap-stack-lg">
+<span class="font-display-lg text-headline-md font-bold text-navy-deep uppercase tracking-tighter">DENIGERLEON</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="index.html">Petroleum</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="gas.html">Gas</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="refinery.html">Refinery</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="foods.html">Foods</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-gold-accent border-b-2 border-gold-accent pb-1 transition-colors duration-300" href="agriculture.html">Agriculture</a>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="material-symbols-outlined text-slate-gray p-2 hover:bg-surface-container transition-colors rounded-full">search</button>
+<button class="bg-navy-deep text-on-primary px-stack-lg py-3 rounded-DEFAULT font-label-lg text-label-lg uppercase tracking-wider hover:bg-opacity-90 transition-all active:opacity-80">Contact Us</button>
+</div></div>
+</nav>
+<!-- Side Navigation (Mobile/Exp) -->
+<aside class="hidden lg:flex flex-col h-screen fixed left-0 w-64 bg-surface-container-low border-r border-outline-variant z-40 pt-24 pb-8 px-stack-md">
+<div class="flex items-center gap-stack-md px-stack-md mb-stack-lg">
+<div class="w-10 h-10 bg-navy-deep rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-container-lowest" style="font-variation-settings: 'FILL' 1;">agriculture</span>
+</div>
+<div>
+<p class="font-headline-md text-body-md font-bold text-navy-deep leading-tight">Denigerleon Global</p>
+<p class="text-[10px] text-slate-gray uppercase tracking-widest font-label-sm">Excellence in Energy</p>
+</div>
+</div>
+<div class="flex flex-col gap-stack-sm flex-grow">
+<a class="flex items-center gap-stack-md p-stack-md rounded-lg text-slate-gray hover:bg-surface-container transition-transform scale-95 hover:scale-100" href="#">
+<span class="material-symbols-outlined">business_center</span>
+<span class="font-label-lg text-label-lg">Home</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-md rounded-lg bg-surface-container-high text-energy-blue font-bold" href="#">
+<span class="material-symbols-outlined">factory</span>
+<span class="font-label-lg text-label-lg">Operations</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-md rounded-lg text-slate-gray hover:bg-surface-container transition-transform scale-95 hover:scale-100" href="#">
+<span class="material-symbols-outlined">language</span>
+<span class="font-label-lg text-label-lg">Markets</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-md rounded-lg text-slate-gray hover:bg-surface-container transition-transform scale-95 hover:scale-100" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="font-label-lg text-label-lg">Logistics</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-md rounded-lg text-slate-gray hover:bg-surface-container transition-transform scale-95 hover:scale-100" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-label-lg text-label-lg">Support</span>
+</a>
+</div>
+<button class="w-full bg-surface-container-highest text-navy-deep font-bold py-3 px-stack-md rounded-lg flex items-center justify-center gap-stack-sm hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="font-label-lg text-label-lg uppercase">Request Quote</span>
+</button>
+</aside>
+<main class="lg:pl-64 pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center bg-no-repeat" data-alt="A cinematic, wide-angle shot of a sprawling, high-end modern ranch during the golden hour. In the foreground, healthy, well-groomed cattle graze on lush, vibrant green pastures. In the distance, sleek, minimalist industrial farming structures and clean energy wind turbines stand against a soft, hazy sunset sky. The lighting is warm and ethereal, emphasizing the premium and sustainable nature of the agricultural operation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeb55rrx0ul5b4N_rXJP9MXwxP1jR44hEEJG90bwS5yrzIacoUvRipmDf4W_KgOW5GCIuUgBIr_SOJqU0gSaVKKDqd_mgL-O3tDPvmBg-p6FzzYhSitrD8PVmRIO9D8HZsiOCYJIn1c7MpUf0DQkFA8ah7Q2gP4Ru9fGPriQxf49f0mza6kPxyFtakE_03qaEZfgLLLQLMlzyJvryM6WAWc1Xjci_ab27bwmB5ZTRAshx0tgLpf3dVitLCGIQXtvM6py0np5fhGsBR')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-navy-deep/80 via-navy-deep/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-4xl">
+<div class="flex items-center gap-2 mb-stack-md">
+<span class="h-[2px] w-12 bg-gold-accent"></span>
+<span class="font-label-lg text-label-lg text-gold-accent uppercase tracking-[0.2em]">Sustainable Excellence</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-surface-bright mb-stack-md drop-shadow-lg">
+                    Modernizing the Global <br/> <span class="text-gold-accent italic">Agrarian Legacy.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-surface-container-low max-w-xl mb-stack-lg leading-relaxed">
+                    Denigerleon Agriculture bridges the gap between traditional ranching heritage and cutting-edge industrial technology, delivering high-yield, sustainable investment opportunities across the food value chain.
+                </p>
+<div class="flex flex-wrap gap-stack-md">
+<button class="bg-gold-accent text-navy-deep font-bold px-10 py-5 rounded-DEFAULT text-label-lg uppercase tracking-wider flex items-center gap-3 hover:bg-surface-bright transition-all">
+                        Explore Operations <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-surface-bright text-surface-bright font-bold px-10 py-5 rounded-DEFAULT text-label-lg uppercase tracking-wider hover:bg-surface-bright/10 transition-all">
+                        Investment Tiers
+                    </button>
+</div>
+</div>
+<!-- Stats Overlay (Floating) -->
+<div class="absolute bottom-12 right-margin-desktop hidden xl:flex gap-gutter">
+<div class="glass-card p-stack-lg rounded-xl flex flex-col min-w-[200px]">
+<span class="text-navy-deep font-display-lg text-headline-lg">120K+</span>
+<span class="text-slate-gray font-label-sm uppercase tracking-widest">Hectares Managed</span>
+</div>
+<div class="glass-card p-stack-lg rounded-xl flex flex-col min-w-[200px]">
+<span class="text-navy-deep font-display-lg text-headline-lg">15%</span>
+<span class="text-slate-gray font-label-sm uppercase tracking-widest">Annual Growth</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Agricultural Verticals -->
+<section class="py-stack-lg px-margin-desktop bg-surface-off-white">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-stack-md">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-navy-deep mb-stack-sm">Professional Farming &amp; Ranching</h2>
+<p class="text-slate-gray font-body-md">Our multi-sector approach ensures resilience and high returns by diversifying into high-demand livestock and grain markets.</p>
+</div>
+<a class="text-navy-deep font-bold border-b-2 border-gold-accent pb-1 hover:text-gold-accent transition-colors flex items-center gap-2" href="#">
+                        View All Sectors <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<div class="bento-grid">
+<!-- Livestock Management (Large) -->
+<div class="bento-item col-span-12 md:col-span-8 h-[450px] relative bg-navy-deep flex items-end">
+<div class="absolute inset-0 bg-cover bg-center opacity-60 bg-no-repeat" data-alt="Close-up professional portrait of premium Angus cattle in a clean, state-of-the-art ranch setting. The lighting is crisp and detailed, highlighting the health and quality of the livestock. The aesthetic is corporate and modern, emphasizing the industrial-scale precision of Denigerleon's livestock operations." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAL1PNcd0Eytj-qyqdHwhpYXzF3-5vMXXNNnmIoq9vAOVWvc7Bxw7ZAJwA7ljro_nnJYCaPtqduGnR9Gy0tZZL9hSLJslQLevV7urxu2-rW1nl8VbmziLtOYL0-FRrQc6YX1To670iIcMaQQ3qhd6RYMTtoWHJFAfn9Qc1awJJcRpXZabDjo-AXa9Z19vB-_hdHgpp5IYciOpUJJfuvF1SO9AiXp5sQ_5X2ncyzGmV004iRJsHaAHGu1gVyUKEjnHBabxTmNZwBhHU3')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent"></div>
+<div class="relative z-10 p-10 w-full">
+<span class="bg-gold-accent text-navy-deep px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4 inline-block">Livestock Prime</span>
+<h3 class="text-surface-bright text-headline-lg mb-stack-sm font-bold">Advanced Ranching Systems</h3>
+<p class="text-surface-variant max-w-lg mb-stack-md">Implementing genetic optimization and precision health monitoring for premium cattle and poultry production.</p>
+<button class="text-surface-bright font-label-lg flex items-center gap-2 group">Learn more <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span></button>
+</div>
+</div>
+<!-- Grain & Crop (Side Tall) -->
+<div class="bento-item col-span-12 md:col-span-4 h-[450px] bg-nature-green p-10 flex flex-col justify-between text-on-primary">
+<div>
+<span class="material-symbols-outlined text-[48px] text-gold-accent mb-stack-md">potted_plant</span>
+<h3 class="text-headline-md font-bold mb-stack-sm">Arable Investment</h3>
+<p class="text-surface-container-high/80 leading-relaxed">Large-scale commercial farming for staple grains and export-ready cash crops using autonomous machinery.</p>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-white/20 pb-2">
+<span class="font-label-sm uppercase opacity-70">Wheat</span>
+<span class="font-bold">+4.2%</span>
+</div>
+<div class="flex justify-between border-b border-white/20 pb-2">
+<span class="font-label-sm uppercase opacity-70">Maize</span>
+<span class="font-bold">+2.8%</span>
+</div>
+</div>
+</div>
+<!-- Logistics (Small) -->
+<div class="bento-item col-span-12 md:col-span-4 h-[300px] bg-surface-container-lowest border border-outline-variant p-8">
+<span class="material-symbols-outlined text-gold-accent text-[40px] mb-stack-md">local_shipping</span>
+<h3 class="text-navy-deep text-headline-md font-bold mb-stack-sm">Cold Chain Logistics</h3>
+<p class="text-slate-gray font-body-md">End-to-end temperature-controlled supply chain from farm gate to global distribution hubs.</p>
+</div>
+<!-- Sustainability (Wide) -->
+<div class="bento-item col-span-12 md:col-span-8 h-[300px] relative">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" data-alt="An abstract, top-down aerial view of a geometrically perfect circular irrigation farm field. The vibrant green patterns contrast with the rich, dark soil. The image is clean, sharp, and modern, representing the union of technology and nature. The overall mood is orderly, high-tech, and sustainable." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNv-FjzpUu1k3-Rrsb52zmlhRcEfxiUyB3Y7UDX9UcbL2uNlrIfFMJmDfZOh2JIc1KknHa3uBI696snmululGEXJur5DoS5iSzyeYR-F0SVuf9gbW85QtUBPbP5NBW3225IRbAU93iadb7RFHw8oxbrRwbZQ-J3QVxOSyTsHNH7ag236Yq2Mdq2Nhnev2XoMCS53q9MFxQ33oTTY_M8hd-jJVgxFmIiT1sAHoWxO-pc1Xf5Mdhxm9B5aSPoR-DT0gNxmbWuePZTMoa')"></div>
+<div class="absolute inset-0 bg-energy-blue/20 mix-blend-multiply"></div>
+<div class="absolute inset-0 flex items-center px-12">
+<div class="glass-card p-8 rounded-xl max-w-md">
+<h3 class="text-navy-deep text-headline-md font-bold mb-2">Sustainable Impact</h3>
+<p class="text-slate-gray text-body-md">Carbon-neutral farming targets for 2030 through regenerative soil practices and solar-integrated ranching.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Investment Section -->
+<section class="py-stack-lg px-margin-desktop bg-navy-deep text-on-primary">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-md">
+<h2 class="font-display-lg text-headline-lg text-surface-bright">Fueling Global <br/>Food Security</h2>
+<p class="text-on-primary-container font-body-lg">Agriculture is the bedrock of civilization. At Denigerleon, we treat it with the same industrial rigor as our energy sectors, offering institutional-grade agro-investment vehicles that protect and grow capital.</p>
+<ul class="space-y-stack-md">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-gold-accent mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-surface-bright">Asset-Backed Security</h4>
+<p class="text-on-primary-container text-body-md">Investments are anchored in physical land and high-value biological assets.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-gold-accent mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-surface-bright">Global Distribution</h4>
+<p class="text-on-primary-container text-body-md">Strategic partnerships with international food distributors in 45 countries.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-gold-accent/20 rounded-xl blur-2xl group-hover:bg-gold-accent/30 transition-all"></div>
+<div class="relative bg-surface-container-low p-10 rounded-xl border border-white/10 text-navy-deep">
+<h3 class="font-headline-md text-headline-md mb-stack-lg text-center">Portfolio Performance</h3>
+<div class="space-y-6">
+<div class="flex items-end justify-between gap-2">
+<div class="w-1/4 h-32 bg-slate-gray/20 rounded-t-lg"></div>
+<div class="w-1/4 h-48 bg-slate-gray/40 rounded-t-lg"></div>
+<div class="w-1/4 h-64 bg-energy-blue rounded-t-lg"></div>
+<div class="w-1/4 h-80 bg-gold-accent rounded-t-lg"></div>
+</div>
+<div class="flex justify-between font-label-sm text-slate-gray uppercase tracking-widest pt-4 border-t border-navy-deep/10">
+<span>2021</span>
+<span>2022</span>
+<span>2023</span>
+<span class="text-navy-deep font-bold">2024 Est.</span>
+</div>
+<button class="w-full bg-navy-deep text-on-primary py-4 rounded-lg font-bold uppercase tracking-widest hover:scale-[1.02] active:scale-95 transition-all">
+                                Request Investor Prospectus
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Corporate Footer -->
+<footer class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary border-t border-white/5">
+<div class="col-span-1 md:col-span-1">
+<p class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-stack-md uppercase">DENIGERLEON</p>
+<p class="text-on-surface-variant font-body-md pr-8">A global leader in industrial energy, refining, and agricultural development, committed to long-term sustainability and operational excellence.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-stack-md">Sectors</h4>
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Petroleum &amp; Gas</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Refinery Ops</a>
+<a class="text-gold-accent font-bold font-body-md" href="#">Agricultural Assets</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Food Production</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-stack-md">Company</h4>
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="leadership.html">Sustainability</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="leadership.html">Investor Relations</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="leadership.html">Careers</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="leadership.html">Media Center</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-gold-accent mb-stack-md">Connect</h4>
+<div class="flex flex-col gap-3">
+<p class="text-on-surface-variant font-body-md">Headquarters: Global Trade Tower, Level 45</p>
+<p class="text-on-surface-variant font-body-md">contact@denigerleon.com</p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">public</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">mail</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent transition-colors">description</span>
+</div>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-stack-lg pt-stack-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<p class="text-on-surface-variant text-body-md">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-stack-lg">
+<a class="text-on-surface-variant text-body-md hover:text-surface-bright transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant text-body-md hover:text-surface-bright transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</main>
+<script>
+        // Simple scroll interaction for header
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'bg-white/95', 'backdrop-blur-md');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.remove('h-16', 'bg-white/95', 'backdrop-blur-md');
+                nav.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>

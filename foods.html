@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Foods Division | Denigerleon Global</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(29, 31, 39, 0.9) 0%, rgba(29, 31, 39, 0.4) 100%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "energy-blue": "#3C5CCF",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-container-high": "#e0e8fb",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#c5c6d1",
+                        "surface-dim": "#d2daec",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-fixed": "#191b23",
+                        "secondary-container": "#fed488",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container-low": "#f0f3ff",
+                        "on-primary-fixed-variant": "#45464f",
+                        "inverse-on-surface": "#ecf1ff",
+                        "background": "#f9f9ff",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c7c6cb",
+                        "on-tertiary-fixed": "#001453",
+                        "tertiary-fixed": "#dde1ff",
+                        "surface-container": "#e7eeff",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#5c5e67",
+                        "on-tertiary-container": "#607ff3",
+                        "on-primary": "#ffffff",
+                        "primary": "#05070e",
+                        "inverse-primary": "#c5c6d1",
+                        "primary-container": "#1d1f27",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#b7c4ff",
+                        "on-primary-container": "#858690",
+                        "surface-bright": "#f9f9ff",
+                        "tertiary-container": "#00175b",
+                        "on-tertiary-fixed-variant": "#113aaf",
+                        "secondary": "#775a19",
+                        "on-background": "#141c29",
+                        "inverse-surface": "#29313f",
+                        "primary-fixed": "#e1e2ed",
+                        "gold-accent": "#C5A059",
+                        "surface-container-highest": "#dbe3f5",
+                        "on-error": "#ffffff",
+                        "navy-deep": "#1D1F27",
+                        "on-surface-variant": "#46464b",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#000420",
+                        "on-secondary-container": "#785a1a",
+                        "secondary-fixed": "#ffdea5",
+                        "outline": "#77767c",
+                        "slate-gray": "#6A7282",
+                        "on-surface": "#141c29",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#dbe3f5",
+                        "surface": "#f9f9ff",
+                        "surface-off-white": "#F8F8F8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "stack-lg": "32px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-tablet": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface font-body-md text-on-background m-0 p-0 overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 h-20 shadow-sm bg-surface-container-lowest dark:bg-navy-deep">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><div class="flex items-center gap-stack-md">
+<span class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright">DENIGERLEON</span>
+</div>
+<nav class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="index.html">Petroleum</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="gas.html">Gas</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="refinery.html">Refinery</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-gold-accent border-b-2 border-gold-accent pb-1" href="foods.html">Foods</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="agriculture.html">Agriculture</a>
+</nav>
+<button class="bg-navy-deep text-on-primary px-stack-lg py-2.5 rounded-lg font-label-lg uppercase tracking-widest hover:bg-gold-accent transition-all duration-300 active:opacity-80">
+            Contact Us
+        </button></div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center bg-no-repeat" data-alt="A sprawling, high-resolution cinematic view of golden wheat fields at sunset, with close-ups of premium coffee beans and refined white sugar crystals artfully arranged. The lighting is dramatic and warm, emphasizing the organic texture and high quality of the commodities. The composition is modern and corporate, utilizing a sophisticated color palette of deep navy blues and radiant gold accents. The atmosphere is one of global scale and industrial excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYtshDXHhMkPkc02oTdlwZAiuKayqbazbPIvR5GcG4AP9DRpvynx2w8LZBVc8ZQ4wqI8n0Sfrh2mJKXR1ERAtAQ8AhVT0UcoRAVA9kRTKTnCpA5tQkf-bKa-6cqf3s-DL6UKLIhucaTwWBOfqrx9XHp0TSI6cSyPUW48_CNxLfIrKErGasb6ed3RK9kCjls9iKP7gzDq3v7ApBF2lN4SYCHe-dDV26CiOSqx3NQlXA7Kux6Qxk52BaaIPFQfbXjOmyzKSQSCMb_Y8t')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl">
+<span class="inline-block text-gold-accent font-label-lg tracking-[0.2em] uppercase mb-stack-md">Global Commodity Excellence</span>
+<h1 class="font-display-lg text-display-lg text-white mb-stack-lg leading-tight">Sustaining the World Through Premium Foods</h1>
+<p class="font-body-lg text-body-lg text-surface-container-low mb-10 opacity-90 max-w-xl">
+                        Denigerleon Foods Division specializes in the global sourcing, logistics, and supply of essential commodities, connecting premium producers with global markets.
+                    </p>
+<div class="flex gap-gutter">
+<button class="bg-gold-accent text-primary font-label-lg uppercase px-8 py-4 rounded shadow-lg hover:brightness-110 transition-all">Explore Portfolio</button>
+<button class="border border-white text-white font-label-lg uppercase px-8 py-4 rounded hover:bg-white hover:text-primary transition-all">Supply Chain Transparency</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Banner -->
+<section class="bg-navy-deep py-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div>
+<p class="text-gold-accent font-display-lg text-headline-lg">45+</p>
+<p class="text-surface-container-low font-label-sm uppercase tracking-widest">Countries Served</p>
+</div>
+<div>
+<p class="text-gold-accent font-display-lg text-headline-lg">1.2M</p>
+<p class="text-surface-container-low font-label-sm uppercase tracking-widest">Metric Tons Annually</p>
+</div>
+<div>
+<p class="text-gold-accent font-display-lg text-headline-lg">Global</p>
+<p class="text-surface-container-low font-label-sm uppercase tracking-widest">Supply Networks</p>
+</div>
+<div>
+<p class="text-gold-accent font-display-lg text-headline-lg">A+</p>
+<p class="text-surface-container-low font-label-sm uppercase tracking-widest">Quality Assurance</p>
+</div>
+</div>
+</section>
+<!-- Commodity Grid Section -->
+<section class="py-24 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-stack-lg">
+<div class="max-w-2xl">
+<h2 class="font-display-lg text-headline-lg text-navy-deep mb-stack-sm">Commodity Portfolio</h2>
+<div class="h-1 w-24 bg-gold-accent mb-stack-md"></div>
+<p class="font-body-lg text-body-lg text-slate-gray">Our rigorous quality control and deep logistical expertise ensure that every shipment of sugar, grain, and cocoa meets the highest international standards.</p>
+</div>
+<div class="hidden md:flex gap-4">
+<span class="material-symbols-outlined p-2 border border-outline-variant text-slate-gray rounded-full cursor-pointer hover:bg-surface-container-low">arrow_back</span>
+<span class="material-symbols-outlined p-2 border border-navy-deep text-navy-deep rounded-full cursor-pointer hover:bg-navy-deep hover:text-white">arrow_forward</span>
+</div>
+</div>
+<div class="bento-grid">
+<!-- Sugar -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer">
+<div class="relative h-64 rounded-lg overflow-hidden mb-stack-md shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up macro photography of high-quality refined white sugar and organic brown sugar crystals. The lighting highlights the crystalline structures against a minimalist, high-end corporate background. Soft shadows and a clean, light-mode aesthetic convey purity and food safety. Deep navy and gold accents frame the composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUvAQjNGIAyevIu4bIQEyYzU3d1zS4h3OaR76uyPCKMQkvT0zQ_uztz4MNon_ycQ13VVpsOEFR-y_khkockV5CO3osQv92jH0aehUBOHNRXGnROFbFTOjqtnJag3_k7qqieQTz5WRYtF_nrdZAwzjwTznvWPHCjOEQNf_hd2VxQqk_ehyIi58-kvu0lxTa0GOyDG6aiGO7mpcPDh3I1TxtkCPeN61ntLEqBHcLDM-_2bvcoeZ23P1CJcJmXm8OBRaGLUgId9KEHIWB"/>
+<div class="absolute top-4 right-4 bg-white/90 p-2 rounded shadow">
+<span class="material-symbols-outlined text-gold-accent">nutrition</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-2">Sugar</h3>
+<p class="text-slate-gray font-body-md mb-4">Premium sourcing of ICUMSA 45 White Refined Sugar and high-quality Brown Sugar (VHP 600-1200) from Brazil and Thailand.</p>
+<ul class="text-label-sm uppercase tracking-widest text-energy-blue font-bold flex flex-wrap gap-x-4">
+<li>White Refined</li>
+<li>Brown VHP</li>
+</ul>
+</div>
+<!-- Wheat -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer">
+<div class="relative h-64 rounded-lg overflow-hidden mb-stack-md shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Industrial-scale storage of golden wheat grains in a modern, clean refinery environment. The composition focuses on the vast quantity and high-quality of the grain, shot with a professional architectural style. Warm sunset light filters through the facility, creating a prestigious and reliable atmosphere for a global food conglomerate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANlPDMHY2xLIhTA8Mc3Gy1PRHVvHFLnC4rE914rb9TrhkVdNQLHxho9irUD1HxsQCJzV24cObMyM5TfxkxpSH37abfLvQB_61qqJ2yA96XEYAZQWqghWYkmflUMhxAEgdapYXdPgmfu-RiUih_rsUCkgDZ549I4SnzYYYSmbANMr3D9vTz8u1ncq974MChOEf4Fd-gnYMT-hwTrXmLe3UeAJcc0GibZaDX92EUdOMQQ2kzduMFWnnuvFBHg6mWkRBa3GWeRhcwZSr0"/>
+<div class="absolute top-4 right-4 bg-white/90 p-2 rounded shadow">
+<span class="material-symbols-outlined text-gold-accent">agriculture</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-2">Wheat</h3>
+<p class="text-slate-gray font-body-md mb-4">Strategic supply of Summer and Winter wheat varieties, optimized for milling, baking, and industrial food processing.</p>
+<ul class="text-label-sm uppercase tracking-widest text-energy-blue font-bold flex flex-wrap gap-x-4">
+<li>Summer</li>
+<li>Winter</li>
+<li>Hard Red</li>
+</ul>
+</div>
+<!-- Coffee -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer">
+<div class="relative h-64 rounded-lg overflow-hidden mb-stack-md shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxury presentation of unroasted green coffee beans and roasted dark Arabica beans. Professional lighting highlights the oily sheen of the roasted beans and the consistent size of the green beans. The setting is a minimalist laboratory environment with navy blue accents, conveying precision, expertise, and premium quality sourcing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIM5y8dWjk3JKOExr8CulkzWRCxZYBTQIiCTN68d8ZlKeXfHfhkkEBf2_6cMwIcuN_xZsbpshOlBG2QvDRCDIh_ZwXhTvY8aNJAatMz7jcqz8n8A5XLCyHzOh1DshVNFNgzkphNTyoSSrQaHqx0cC1ORrmvEUQzLzIlSed-qY4_bbJhXxUfykc_VGdsFwjKygMCfEIGSgAx7RdFIf1_nZVmLlt98UwyvP0o7xTO_pNJVjVn3RZKiKMwUVOvsW4pWSdCGHkyo_BCQS_"/>
+<div class="absolute top-4 right-4 bg-white/90 p-2 rounded shadow">
+<span class="material-symbols-outlined text-gold-accent">coffee</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-2">Coffee</h3>
+<p class="text-slate-gray font-body-md mb-4">Direct-from-source Arabica and Robusta beans, catering to both specialty roasters and mass-market distributors.</p>
+<ul class="text-label-sm uppercase tracking-widest text-energy-blue font-bold flex flex-wrap gap-x-4">
+<li>Arabica</li>
+<li>Robusta</li>
+</ul>
+</div>
+<!-- Corn -->
+<div class="col-span-12 md:col-span-6 group cursor-pointer">
+<div class="relative h-80 rounded-lg overflow-hidden mb-stack-md shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, organized grid of high-quality yellow and white corn kernels. High-contrast, sharp focus on the textures of the grain. The lighting is bright and industrial, emphasizing freshness and large-scale agricultural reliability. The visual language is corporate and authoritative, utilizing the brand's signature gold and navy colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzOyhyxkGTdkt6uCkPDHL-3VVBx_-cxe9hlnb3_Jaq6QZ6XEcTRfy9SDKvSFfJkSbx0zq5dd0VkMEO3vI_7TvCzrYQ5ZYKcIz0GEcxwopviolSRTpdxNGeEUhjStNgLwETDrzJ6bSL8GiGMWpobUJF6wbjBa0wfI3bgcQT1JXMBx_9AICTBfgNhElKNS2S8rJusiZGEJ_bEpRHbhHDGB-MA_mIFK9l1tL3lNTQY0O2LOStx8HA4x8TwAnNobVspAQG8vubH4rN8gom"/>
+<div class="absolute top-4 right-4 bg-white/90 p-2 rounded shadow">
+<span class="material-symbols-outlined text-gold-accent">potted_plant</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-2">Corn</h3>
+<p class="text-slate-gray font-body-md mb-4">Bulk supply of non-GMO Yellow and White corn for food production, animal feed, and ethanol industrial applications.</p>
+</div>
+<!-- Rice & Cocoa -->
+<div class="col-span-12 md:col-span-6 grid grid-rows-2 gap-gutter">
+<div class="group cursor-pointer flex gap-gutter bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-gold-accent transition-all">
+<div class="w-1/3 rounded overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="A variety of premium rice types including long-grain Basmati, Jasmine, and Parboiled rice grains presented in minimalist ceramic bowls. The aesthetic is clean and high-end, utilizing soft top-down lighting. The background is a subtle slate-gray, perfectly matching the corporate design system of a global commodity leader." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2WyYLe5jJHRVWnnEgslR-jHFiIW7VmsMek0m2BU6qr2bLZXuV75e_j5o1u-2rTP9sorAqDnKhnRGmqFMAjoKrXuqebVIvtxJeb0yEXR75Uz0iAEeUiLIRO6dfJAoKLr3OkLluqodOK3MzSZt1nwBA7QAggULpkL4E9ouxQSmCY7WFqqCre6P8K-sLrONSy-GgDgSh8J_NrnTF4ktCaJKDXACfkSFM7HmRf6I4-8S2CheRNvyf80Zt5nQQyGce1ViPKLtfpuhGo_T6"/>
+</div>
+<div class="w-2/3">
+<h3 class="font-headline-md text-[20px] text-navy-deep mb-1">Rice (All Types)</h3>
+<p class="text-slate-gray text-body-md line-clamp-2">Sourcing Basmati, Jasmine, and Long Grain rice from primary Asian and South American hubs.</p>
+</div>
+</div>
+<div class="group cursor-pointer flex gap-gutter bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-gold-accent transition-all">
+<div class="w-1/3 rounded overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Artisanal presentation of premium cocoa beans and raw cacao pods in a high-contrast industrial setting. Deep shadows and gold highlighting on the beans convey a sense of luxury and high commodity value. The imagery is sharp and professional, suited for a corporate portfolio showing expertise in African and South American trade." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZk3_4AwG_f8VY7gLiYehjM7eer2gMc9e6nrkPCjWYcMzwuVF1mKI58_OVDEaoIkongnSmXk0Gb-bX8C9YYnJGJCU-FugawPEh6s1dQ84hiFi-U1Ritff2-2xdJf0FqdZXc7E94xVusM39p_ux3ezfTdqoYamUPFPdnAWOVxuPUNk3W5aYKtfBvRRtOxlRUCL57TjKHdrs-2oxlMxCC0rTc83pVz9O_UxwnBYtMXmIMjxKM_GqDmxdbQGddemoIhfVX7-mtaopRAkm"/>
+</div>
+<div class="w-2/3">
+<h3 class="font-headline-md text-[20px] text-navy-deep mb-1">Cocoa</h3>
+<p class="text-slate-gray text-body-md line-clamp-2">Highest grade West African and South American cocoa beans for the global confectionery industry.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Supply Chain CTA -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+<div class="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A high-tech logistics control center with large digital screens showing global shipping routes and real-time commodity data. The room is modern and dimly lit with cool blue and neon gold accents. Professional analysts are working at minimalist desks, symbolizing the sophisticated logistics and supply chain management of a world-class foods division." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsM_srTq5RsXX0kN02-ef5hQz72zBzyJcvYVzV5OMb8zqmSFirbZ58k2nHy4lU8iKuERpR9jYvW8sW1IjoWOyszqGZn8XkYqN_7mMdXYUHRKGfdiI0HaliN_ynUQ5f0eSc4DIiSbGVspt9qQ3AorFEocvOxLWAmHyHDEFbgyCzmvvgeY3WlJ-sbIHY_0n-mXJ0NZmjlqMZwvyN4O_835n5dxkCl70y1Czt_xr_md5mRpqEVIlcs0Ou9pzdOsFoleUVKgJs-Thgj6y7"/>
+<div class="absolute inset-0 bg-navy-deep/20"></div>
+</div>
+<div>
+<h2 class="font-display-lg text-headline-lg text-navy-deep mb-stack-md">Advanced Logistics Network</h2>
+<p class="font-body-lg text-body-lg text-slate-gray mb-stack-lg leading-relaxed">
+                        Denigerleon leverages a proprietary global logistics network to minimize transit times and ensure product integrity. From farm-gate collection to international port delivery, we manage every step of the journey.
+                    </p>
+<div class="space-y-4 mb-stack-lg">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-energy-blue bg-white p-2 rounded-full shadow-sm">verified_user</span>
+<span class="font-label-lg text-navy-deep">SGS & Intertek Certified Inspection</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-energy-blue bg-white p-2 rounded-full shadow-sm">public</span>
+<span class="font-label-lg text-navy-deep">Real-time Global Vessel Tracking</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-energy-blue bg-white p-2 rounded-full shadow-sm">payments</span>
+<span class="font-label-lg text-navy-deep">Flexible DLC / SBLC Payment Structures</span>
+</div>
+</div>
+<button class="bg-navy-deep text-white px-10 py-4 rounded font-label-lg uppercase tracking-wider flex items-center gap-2 hover:bg-energy-blue transition-colors group">
+                        Inquire About Supply 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">trending_flat</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Sustainability Section -->
+<section class="py-24 text-center px-margin-desktop">
+<h2 class="font-display-lg text-headline-lg text-navy-deep mb-stack-md">Commitment to Sustainability</h2>
+<p class="max-w-2xl mx-auto font-body-lg text-slate-gray mb-16">We believe in growth that doesn't compromise the future. Our sourcing programs prioritize ethical labor and environmentally conscious farming practices.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto">
+<div class="p-stack-lg bg-white rounded-lg shadow-sm border-t-4 border-gold-accent">
+<span class="material-symbols-outlined text-[48px] text-gold-accent mb-4">eco</span>
+<h4 class="font-headline-md text-navy-deep mb-2">Eco-Sourcing</h4>
+<p class="text-slate-gray">Reducing the carbon footprint of our global grain transit by 15% by 2025.</p>
+</div>
+<div class="p-stack-lg bg-white rounded-lg shadow-sm border-t-4 border-energy-blue">
+<span class="material-symbols-outlined text-[48px] text-energy-blue mb-4">groups</span>
+<h4 class="font-headline-md text-navy-deep mb-2">Fair Trade</h4>
+<p class="text-slate-gray">Direct support for farmer co-operatives in South America and Southeast Asia.</p>
+</div>
+<div class="p-stack-lg bg-white rounded-lg shadow-sm border-t-4 border-navy-deep">
+<span class="material-symbols-outlined text-[48px] text-navy-deep mb-4">inventory_2</span>
+<h4 class="font-headline-md text-navy-deep mb-2">Waste Reduction</h4>
+<p class="text-slate-gray">Implementing zero-waste packaging solutions across our cocoa and rice supply chains.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary">
+<div class="md:col-span-1">
+<span class="font-headline-md text-headline-md font-bold text-surface-container-lowest block mb-4">DENIGERLEON</span>
+<p class="font-body-md text-on-surface-variant max-w-xs">
+                A global leader in energy, industrial manufacturing, and food commodity supply. Excellence in every shipment.
+            </p>
+</div>
+<div>
+<h5 class="font-label-lg uppercase tracking-widest text-gold-accent mb-6">Quick Links</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Petroleum Division</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Gas Infrastructure</a></li>
+<li><a class="font-body-md text-gold-accent font-bold transition-colors" href="#">Foods Portfolio</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Agriculture Logistics</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg uppercase tracking-widest text-gold-accent mb-6">Company</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="leadership.html">Sustainability</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="leadership.html">Careers</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-surface-bright transition-colors" href="leadership.html">Investor Relations</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg uppercase tracking-widest text-gold-accent mb-6">Contact</h5>
+<p class="font-body-md text-on-surface-variant mb-4">Global Headquarters<br/>Business District Phase 1<br/>London, UK</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent">share</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent">mail</span>
+<span class="material-symbols-outlined text-surface-container-lowest cursor-pointer hover:text-gold-accent">call</span>
+</div>
+</div>
+<div class="md:col-span-4 border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-on-surface-variant">
+<p class="font-body-md">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-gutter mt-4 md:mt-0">
+<span class="text-sm">ISO 9001:2015</span>
+<span class="text-sm">ISO 22000</span>
+<span class="text-sm">HACCP Certified</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for Fade-in effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Instant load for Hero
+        const hero = document.querySelector('section');
+        if(hero) {
+            hero.classList.remove('opacity-0', 'translate-y-10');
+            hero.classList.add('opacity-100');
+        }
+    </script>
+</body></html>

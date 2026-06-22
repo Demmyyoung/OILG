@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership | DENIGERLEON</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "energy-blue": "#3C5CCF",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container-high": "#e0e8fb",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#c5c6d1",
+                    "surface-dim": "#d2daec",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-primary-fixed": "#191b23",
+                    "secondary-container": "#fed488",
+                    "on-secondary-fixed": "#261900",
+                    "surface-container-low": "#f0f3ff",
+                    "on-primary-fixed-variant": "#45464f",
+                    "inverse-on-surface": "#ecf1ff",
+                    "background": "#f9f9ff",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c7c6cb",
+                    "on-tertiary-fixed": "#001453",
+                    "tertiary-fixed": "#dde1ff",
+                    "surface-container": "#e7eeff",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#5c5e67",
+                    "on-tertiary-container": "#607ff3",
+                    "on-primary": "#ffffff",
+                    "primary": "#05070e",
+                    "inverse-primary": "#c5c6d1",
+                    "primary-container": "#1d1f27",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#b7c4ff",
+                    "on-primary-container": "#858690",
+                    "surface-bright": "#f9f9ff",
+                    "tertiary-container": "#00175b",
+                    "on-tertiary-fixed-variant": "#113aaf",
+                    "secondary": "#775a19",
+                    "on-background": "#141c29",
+                    "inverse-surface": "#29313f",
+                    "primary-fixed": "#e1e2ed",
+                    "gold-accent": "#C5A059",
+                    "surface-container-highest": "#dbe3f5",
+                    "on-error": "#ffffff",
+                    "navy-deep": "#1D1F27",
+                    "on-surface-variant": "#46464b",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#000420",
+                    "on-secondary-container": "#785a1a",
+                    "secondary-fixed": "#ffdea5",
+                    "outline": "#77767c",
+                    "slate-gray": "#6A7282",
+                    "on-surface": "#141c29",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#dbe3f5",
+                    "surface": "#f9f9ff",
+                    "surface-off-white": "#F8F8F8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "stack-lg": "32px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-tablet": "32px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-sm { text-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .executive-card:hover .overlay { opacity: 1; }
+        .transition-standard { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="bg-surface-off-white text-on-surface font-body-md selection:bg-gold-accent selection:text-navy-deep">
+<!-- Top Navigation Bar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 h-20 shadow-sm bg-surface-container-lowest dark:bg-navy-deep">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright">DENIGERLEON</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="index.html">Petroleum</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="gas.html">Gas</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="refinery.html">Refinery</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="foods.html">Foods</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray hover:text-gold-accent transition-colors duration-300" href="agriculture.html">Agriculture</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container rounded-full px-4 py-2">
+<span class="material-symbols-outlined text-slate-gray mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-sm w-32" placeholder="Search Markets..." type="text"/>
+</div>
+<button class="bg-navy-deep text-on-primary px-6 py-2.5 rounded-lg font-label-lg uppercase tracking-widest hover:bg-gold-accent transition-standard">
+                Contact Us
+            </button>
+</div></div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[460px] flex items-center overflow-hidden bg-navy-deep">
+
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
+<span class="text-gold-accent font-label-lg uppercase tracking-[0.3em] mb-4 block">Institutional Stability</span>
+<h1 class="font-display-lg text-display-lg text-surface-bright mb-6 max-w-3xl">Our Leadership &amp; Governance</h1>
+<p class="text-on-primary-container text-body-lg max-w-2xl">
+                    Guided by a board of seasoned global experts, Denigerleon maintains excellence across the petrochemical and agricultural sectors through disciplined stewardship.
+                </p>
+</div>
+</section>
+<!-- Values & Corporate Summary -->
+<section class="py-stack-lg bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-stack-md border-l-4 border-gold-accent bg-surface-container-low rounded-r-xl">
+<span class="material-symbols-outlined text-gold-accent mb-4" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-headline-md text-navy-deep mb-2">Integrity</h3>
+<p class="text-slate-gray text-body-md">Upholding the highest ethical standards in every market and jurisdiction where we operate.</p>
+</div>
+<div class="p-stack-md border-l-4 border-energy-blue bg-surface-container-low rounded-r-xl">
+<span class="material-symbols-outlined text-energy-blue mb-4" style="font-variation-settings: 'FILL' 1;">public</span>
+<h3 class="font-headline-md text-navy-deep mb-2">Global Vision</h3>
+<p class="text-slate-gray text-body-md">Strategically navigating the complexities of international trade and resource management.</p>
+</div>
+<div class="p-stack-md border-l-4 border-navy-deep bg-surface-container-low rounded-r-xl">
+<span class="material-symbols-outlined text-navy-deep mb-4" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<h3 class="font-headline-md text-navy-deep mb-2">Operational Rigor</h3>
+<p class="text-slate-gray text-body-md">Precision in production and logistics to ensure global supply chain reliability.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Directors Grid -->
+<section class="py-24 bg-surface-off-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-display-lg text-headline-lg text-navy-deep mb-4">Board of Directors</h2>
+<div class="w-20 h-1 bg-gold-accent mb-6"></div>
+<p class="text-slate-gray text-body-lg">Our directors bring decades of experience from the world's leading energy firms, financial institutions, and agricultural conglomerates.</p>
+</div>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 border border-outline text-navy-deep px-6 py-3 rounded hover:bg-navy-deep hover:text-white transition-standard font-label-lg">
+<span class="material-symbols-outlined text-sm">download</span>
+                            GOVERNANCE CHARTER
+                        </button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Director 1 -->
+<div class="group relative overflow-hidden bg-white rounded-xl shadow-sm transition-standard hover:-translate-y-2 hover:shadow-xl executive-card">
+<div class="aspect-[3/4] relative overflow-hidden">
+<div class="absolute inset-0 bg-navy-deep/20 group-hover:bg-transparent transition-standard z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a high-ranking male executive in his late 50s. He is wearing a tailored charcoal grey suit with a crisp white shirt and a deep navy silk tie. The lighting is sophisticated, using a Rembrandt style that highlights his authoritative yet approachable expression. The background is a minimalist, softly blurred corporate office with high-end textures of wood and steel in a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3iTcNBeiPJnywMhsKJUPacqyZPTN1Y6uinPWdcUoMDp6Sl9ewvLj_bCIayB2hraTObEkZYpXQFEYwpLFk3t1_JtMoA9YFN9M4JoMAoTmtTNIBhs3UdJyUCSkXIBLOSwPYH9TDyZfAOYDmDFj-Yrg7yq0xLiKQcYzR6dRL7uA_VGTEFzHG_qE7HYxMmaDH5aQ2t3Ljb-Jpkv2wDQwnwMpMTFC0b6IDg8U8phaEg20yiICDZDn4lx9_1_xnUoLGnOMaWjD-8qDKYbsn"/>
+</div>
+<div class="p-6 border-t border-outline-variant">
+<h4 class="font-headline-md text-navy-deep mb-1">Marcus Thorne</h4>
+<p class="text-gold-accent font-label-lg tracking-wider uppercase text-xs mb-4">Chairman &amp; CEO</p>
+<p class="text-slate-gray text-body-md line-clamp-2">Former EVP at Global Energy Corp with 30 years of experience in upstream petroleum operations.</p>
+</div>
+</div>
+<!-- Director 2 -->
+<div class="group relative overflow-hidden bg-white rounded-xl shadow-sm transition-standard hover:-translate-y-2 hover:shadow-xl executive-card">
+<div class="aspect-[3/4] relative overflow-hidden">
+<div class="absolute inset-0 bg-navy-deep/20 group-hover:bg-transparent transition-standard z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a confident female executive in her early 50s. She is wearing a bespoke navy blazer over a silk cream blouse. Her expression is intelligent and welcoming. The lighting is bright and modern, creating a clean high-key look consistent with a premium light-mode corporate website. The background consists of architectural glass and steel, softly out of focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVgU_sJzMe3tO-pwd5VUZ8-SP95BCZtvrxeZHlXPRm1DJa6unkJyFQbVOoyF5_m_HNH8ZZfSlviCG5NbJ7JrfVSbVZINOmKEOYw6KX9Vf8PCPi0_xFT5kwQw_HFBiQUbZRP01Wii38rKH_PC_7RHS_7gIv2iOTgIrjq-quKP0OMc7QTf-JSv3vGeSCtlBxATf8Cgu2OBa6cjK5Tp_Bm7142XJ3ZXb3RTW9bi-GXHauN4twSXGWaVNd5S5whCGD-nrgwaeWpsSBpNsu"/>
+</div>
+<div class="p-6 border-t border-outline-variant">
+<h4 class="font-headline-md text-navy-deep mb-1">Elena Rodriguez</h4>
+<p class="text-gold-accent font-label-lg tracking-wider uppercase text-xs mb-4">Chief Operations Officer</p>
+<p class="text-slate-gray text-body-md line-clamp-2">Leading global logistics and refinery infrastructure development across five continents.</p>
+</div>
+</div>
+<!-- Director 3 -->
+<div class="group relative overflow-hidden bg-white rounded-xl shadow-sm transition-standard hover:-translate-y-2 hover:shadow-xl executive-card">
+<div class="aspect-[3/4] relative overflow-hidden">
+<div class="absolute inset-0 bg-navy-deep/20 group-hover:bg-transparent transition-standard z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a distinguished male director in his 60s with grey hair. He is wearing a classic pinstripe navy suit and wire-rimmed glasses. He has a look of absolute expertise and reliability. The lighting is crisp and detailed, emphasizing professional textures. The setting is a bright, high-ceilinged modern atrium with subtle hints of corporate branding in the distance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEvyXnZDQDNa_vBOt0uHK_ZNcHU6tLLv_rj68FihG9zTI2LzbaWx0k6kcO2YlonW1aYBEo0Xr0yFLfN8oRm7KVn3Gadwb-Tfs985O4nK28_W_5jSzx2awzMEqYIfkWQ4-KraalqB_5s_dp_kmQKmK37LcdfNOS9uDxK4Ho9tjM86fFPfRhUq5x8He3L0n2IjPpD7dkGlLr_QAaUnYOFsv4_CCy1JAmcH6slbE82wcc3--AP5uGY-Lqu0wXBBli-c2BGqWKWJnkWkDj"/>
+</div>
+<div class="p-6 border-t border-outline-variant">
+<h4 class="font-headline-md text-navy-deep mb-1">Dr. Alistair Vance</h4>
+<p class="text-gold-accent font-label-lg tracking-wider uppercase text-xs mb-4">Non-Executive Director</p>
+<p class="text-slate-gray text-body-md line-clamp-2">Specializing in agricultural economics and sustainable food production systems global policy.</p>
+</div>
+</div>
+<!-- Director 4 -->
+<div class="group relative overflow-hidden bg-white rounded-xl shadow-sm transition-standard hover:-translate-y-2 hover:shadow-xl executive-card">
+<div class="aspect-[3/4] relative overflow-hidden">
+<div class="absolute inset-0 bg-navy-deep/20 group-hover:bg-transparent transition-standard z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a younger female executive in her early 40s. She is dressed in a smart, contemporary forest green professional dress. Her posture is poised and decisive. The lighting is natural and bright, conveying transparency and modernity. The background shows a hint of a modern data-center or tech-focused office environment in a light-mode palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tks2o1t7Z11jbsIuONvzyTVmX9BNW-lGzC8SEoxJ8x40G90m1BIu2OgfoDmy2i2Hg_0mbckNeZKY1l6KicGbNvYESxoL6aMLdEs61js4pC2-X9VslHou2lqjyX2VCLYEa0PixMa3WsNXLuNvTHT45m2ajjHzXkvVM4AIdW5EZMZaBQ49Ij1676RVNobb7szW8bU0pdDV7BcZEL6xbbfEXLjPQlIy2f3SOaBXF9pAlMJsBUgOGQP6s-rARUwJ_uXP-tb0aWA_RCu5"/>
+</div>
+<div class="p-6 border-t border-outline-variant">
+<h4 class="font-headline-md text-navy-deep mb-1">Sarah Jenkins</h4>
+<p class="text-gold-accent font-label-lg tracking-wider uppercase text-xs mb-4">Director of Markets</p>
+<p class="text-slate-gray text-body-md line-clamp-2">Expert in energy commodity trading and global market volatility management strategies.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Trust Section -->
+<section class="py-24 bg-navy-deep text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-32 h-32 border-l-2 border-t-2 border-gold-accent opacity-30"></div>
+<div class="absolute -bottom-12 -right-12 w-32 h-32 border-r-2 border-b-2 border-gold-accent opacity-30"></div>
+<img class="rounded-lg shadow-2xl relative z-10" data-alt="A high-angle architectural shot of a massive, modern refinery and industrial complex at dawn. The metal structures are illuminated by soft morning light, creating a palette of deep blues, silvers, and warm gold highlights. The scene is clean, organized, and monumental, symbolizing industrial power and precision. The sky is a clear gradient of soft orange and deep morning blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpUWwlQsPLnMF9tBZNF35DEAiKMaSqPsfzPtPLWfu6s6Yn-145TzZH3Z-9lrUfzcmwOtqrowYd0bvlbnWev7_DKmwIqKUXtOZwBGB3nDKkm5t00baIczIZ6Uw5BZrN00pug1rYIfbAxUH554LJiC-ruDeH6HkFozQJs6EEI0j9fLnbloxo7TEDU4yW0VPOBuNgv_-3BRf3KXZWRzoG7gVtTQNkzLkRJJH7TPN_Z0S8krvbmsbD1UEygPJTLAy9LwUhgzdXzkmYOIWc"/>
+</div>
+<div>
+<h3 class="font-display-lg text-headline-lg mb-8 leading-tight">Decades of Institutional Knowledge</h3>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-gold-accent flex items-center justify-center rounded-full shrink-0">
+<span class="material-symbols-outlined text-navy-deep" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+</div>
+<div>
+<h5 class="font-headline-md text-body-lg font-bold mb-2">Heritage of Excellence</h5>
+<p class="text-on-primary-container">Founded on the principles of reliability, our board ensures that every barrel and bushel meets the Denigerleon seal of quality.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-energy-blue flex items-center justify-center rounded-full shrink-0">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">policy</span>
+</div>
+<div>
+<h5 class="font-headline-md text-body-lg font-bold mb-2">Strict Compliance</h5>
+<p class="text-on-primary-container">Navigating over 40 distinct international regulatory frameworks with a flawless track record of transparency and accountability.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-surface-bright flex items-center justify-center rounded-full shrink-0">
+<span class="material-symbols-outlined text-navy-deep" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div>
+<h5 class="font-headline-md text-body-lg font-bold mb-2">Sustainable Future</h5>
+<p class="text-on-primary-container">Investing heavily in R&amp;D for cleaner energy extraction and high-yield, low-impact agricultural practices.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-gold-accent">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
+<div>
+<h2 class="font-display-lg text-headline-lg text-navy-deep mb-2">Partner with Denigerleon</h2>
+<p class="text-navy-deep/80 text-body-lg">Connect with our corporate relations team for investor inquiries or strategic partnership opportunities.</p>
+</div>
+<button class="bg-navy-deep text-white px-10 py-4 rounded-lg font-bold uppercase tracking-widest hover:scale-105 transition-standard shadow-lg">
+                    Request Corporate Brief
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-stack-lg px-64 grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-6 block">DENIGERLEON</a>
+<p class="text-on-surface-variant font-body-md mb-6">Powering global industry through precision, reliability, and institutional excellence across energy and food sectors.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Corporate</h5>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="leadership.html">Sustainability</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="leadership.html">Investor Relations</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="leadership.html">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Legal</h5>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-surface-bright transition-colors font-body-md" href="#">Compliance</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-surface-bright font-bold uppercase tracking-widest text-xs mb-2">Connect</h5>
+<p class="text-on-surface-variant font-body-md">Global Headquarters<br/>London | Houston | Singapore</p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">language</span>
+<span class="material-symbols-outlined text-surface-bright cursor-pointer hover:text-gold-accent transition-standard">share</span>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-white/10 flex justify-between items-center">
+<p class="text-on-surface-variant font-body-md">© 2024 Denigerleon Company. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-on-surface-variant text-sm">ISO 9001 Certified</span>
+<span class="text-on-surface-variant text-sm">Global Safety Rating: AA+</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for scroll reveal header
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) {
+                header.classList.remove('shadow-lg');
+                return;
+            }
+            if (currentScroll > lastScroll) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+                header.classList.add('shadow-lg');
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Simple hover effect for director cards
+        const cards = document.querySelectorAll('.executive-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('img').style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>

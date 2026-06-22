@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gas Operations &amp; Distribution | DENIGERLEON</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Shared Style & Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "energy-blue": "#3C5CCF",
+                "on-secondary-fixed-variant": "#5d4201",
+                "surface-container-high": "#e0e8fb",
+                "error-container": "#ffdad6",
+                "primary-fixed-dim": "#c5c6d1",
+                "surface-dim": "#d2daec",
+                "secondary-fixed-dim": "#e9c176",
+                "on-primary-fixed": "#191b23",
+                "secondary-container": "#fed488",
+                "on-secondary-fixed": "#261900",
+                "surface-container-low": "#f0f3ff",
+                "on-primary-fixed-variant": "#45464f",
+                "inverse-on-surface": "#ecf1ff",
+                "background": "#f9f9ff",
+                "on-error-container": "#93000a",
+                "outline-variant": "#c7c6cb",
+                "on-tertiary-fixed": "#001453",
+                "tertiary-fixed": "#dde1ff",
+                "surface-container": "#e7eeff",
+                "error": "#ba1a1a",
+                "surface-tint": "#5c5e67",
+                "on-tertiary-container": "#607ff3",
+                "on-primary": "#ffffff",
+                "primary": "#05070e",
+                "inverse-primary": "#c5c6d1",
+                "primary-container": "#1d1f27",
+                "on-tertiary": "#ffffff",
+                "tertiary-fixed-dim": "#b7c4ff",
+                "on-primary-container": "#858690",
+                "surface-bright": "#f9f9ff",
+                "tertiary-container": "#00175b",
+                "on-tertiary-fixed-variant": "#113aaf",
+                "secondary": "#775a19",
+                "on-background": "#141c29",
+                "inverse-surface": "#29313f",
+                "primary-fixed": "#e1e2ed",
+                "gold-accent": "#C5A059",
+                "surface-container-highest": "#dbe3f5",
+                "on-error": "#ffffff",
+                "navy-deep": "#1D1F27",
+                "on-surface-variant": "#46464b",
+                "on-secondary": "#ffffff",
+                "tertiary": "#000420",
+                "on-secondary-container": "#785a1a",
+                "secondary-fixed": "#ffdea5",
+                "outline": "#77767c",
+                "slate-gray": "#6A7282",
+                "on-surface": "#141c29",
+                "surface-container-lowest": "#ffffff",
+                "surface-variant": "#dbe3f5",
+                "surface": "#f9f9ff",
+                "surface-off-white": "#F8F8F8"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-desktop": "64px",
+                "stack-lg": "32px",
+                "container-max": "1280px",
+                "gutter": "24px",
+                "margin-tablet": "32px",
+                "stack-sm": "8px",
+                "stack-md": "16px",
+                "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                "display-lg": ["Montserrat"],
+                "headline-md": ["Montserrat"],
+                "headline-lg": ["Montserrat"],
+                "display-lg-mobile": ["Montserrat"],
+                "label-sm": ["Inter"],
+                "headline-lg-mobile": ["Montserrat"],
+                "body-md": ["Inter"],
+                "label-lg": ["Inter"],
+                "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(29, 31, 39, 0.9) 0%, rgba(29, 31, 39, 0.4) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 h-20 shadow-sm bg-surface-container-lowest dark:bg-navy-deep">
+<div class="container mx-auto max-w-container-max h-full flex justify-between items-center px-4 md:px-8"><a href="index.html" class="font-display-lg text-headline-md font-bold text-navy-deep dark:text-surface-bright uppercase">DENIGERLEON</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="index.html">Petroleum</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-gold-accent border-b-2 border-gold-accent pb-1 transition-all duration-200 active:opacity-80" href="gas.html">Gas</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="refinery.html">Refinery</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="foods.html">Foods</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-slate-gray dark:text-on-surface-variant hover:text-gold-accent transition-colors duration-300" href="agriculture.html">Agriculture</a>
+</nav>
+<button class="bg-navy-deep text-on-primary px-6 py-3 rounded font-label-lg text-label-lg uppercase tracking-widest hover:bg-energy-blue transition-all duration-300">
+            Contact Us
+        </button></div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" data-alt="A massive LNG carrier vessel navigating through deep blue ocean waters during a sunset. The sky is a mix of gold and deep navy, reflecting the corporate colors of Denigerleon. The lighting is cinematic, highlighting the industrial scale of the ship with high-key accents. The scene conveys institutional stability, global reach, and high-end energy distribution logistics in a modern, professional style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEulGQ3x9tAoTMQZTIc5F--eCzuF4ttcqSK7ceSzmf4_Nt0m-FOPSWFAtsOwW-zS52Yf088InhQe8gf8pKSnQmO5RcWLWtJzjdlTwJg229hsxAzfG0dfsbyrol2TPKUTgdcrlYOEVmGrBZl9wtcL_BaNjzqXHEiBqbA--f9eXT_V33yD5okHoLis88RVDTDaq_7KlyMNQ1TAy4ZTYJnOS3mBrm420dU-UXYT8U-LA0YhQCzI6dAvHjO503u56Uk1Ltd1qDa7Um_FYd')"></div>
+<div class="absolute inset-0 z-10 hero-gradient"></div>
+<div class="relative z-20 h-full flex flex-col justify-center px-margin-desktop max-w-container-max mx-auto">
+<span class="text-gold-accent font-label-lg uppercase tracking-[0.2em] mb-4">Energy Distribution Excellence</span>
+<h1 class="font-display-lg text-display-lg text-surface-bright mb-6 max-w-3xl leading-tight">
+                Fueling Global Progress through <span class="text-gold-accent">Strategic Gas Marketing</span>
+</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl mb-8">
+                Originating from the rich reserves of Nigeria, Denigerleon orchestrates the complex logistics of LPG and LNG to every safe port worldwide with precision and reliability.
+            </p>
+<div class="flex gap-4">
+<button class="bg-gold-accent text-navy-deep px-8 py-4 rounded-lg font-label-lg font-bold uppercase transition-all hover:brightness-110">Explore Operations</button>
+<button class="border border-surface-bright text-surface-bright px-8 py-4 rounded-lg font-label-lg font-bold uppercase transition-all hover:bg-surface-bright hover:text-navy-deep">Logistics Network</button>
+</div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-navy-deep py-12">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div>
+<div class="text-gold-accent font-display-lg text-headline-lg">15M+</div>
+<div class="text-surface-variant font-label-lg uppercase tracking-widest">MTPA Capacity</div>
+</div>
+<div>
+<div class="text-gold-accent font-display-lg text-headline-lg">45+</div>
+<div class="text-surface-variant font-label-lg uppercase tracking-widest">Global Ports</div>
+</div>
+<div>
+<div class="text-gold-accent font-display-lg text-headline-lg">100%</div>
+<div class="text-surface-variant font-label-lg uppercase tracking-widest">Safety Record</div>
+</div>
+<div>
+<div class="text-gold-accent font-display-lg text-headline-lg">24/7</div>
+<div class="text-surface-variant font-label-lg uppercase tracking-widest">Operations</div>
+</div>
+</div>
+</section>
+<!-- Core Products Bento Grid -->
+<section class="py-stack-lg px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-12">
+<h2 class="font-headline-lg text-headline-lg text-navy-deep mb-2">Our Specialized Gas Portfolio</h2>
+<div class="h-1 w-20 bg-gold-accent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- LNG Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant flex flex-col md:flex-row gap-8 items-center group hover:shadow-md transition-shadow">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-gold-accent text-4xl" data-icon="ac_unit">ac_unit</span>
+<h3 class="font-headline-md text-headline-md text-navy-deep">Liquefied Natural Gas (LNG)</h3>
+</div>
+<p class="text-slate-gray mb-6 leading-relaxed">
+                        Our LNG operations represent the pinnacle of clean energy transition. We manage high-volume sales and marketing originating from Nigerian liquefaction plants, ensuring a stable supply for power generation and industrial applications across Europe and Asia.
+                    </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-label-lg font-medium">
+<span class="material-symbols-outlined text-energy-blue" data-icon="check_circle">check_circle</span>
+                            Premium Grade Natural Gas
+                        </li>
+<li class="flex items-center gap-3 text-label-lg font-medium">
+<span class="material-symbols-outlined text-energy-blue" data-icon="check_circle">check_circle</span>
+                            Customized Delivery Schedules
+                        </li>
+</ul>
+</div>
+<div class="w-full md:w-1/3 h-64 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-tech LNG storage terminal at night, illuminated by sophisticated blue and gold architectural lighting. The scene shows spherical storage tanks and complex cryogenic piping systems, emphasizing modern industrial precision and safety. The style is clean, corporate, and technologically advanced, echoing the Denigerleon brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiIW8FGVy-tTivfWxqkbaDmhwrrEf29PzLDujUwQ0ZfVLKEmx27BpNz45UrtW0LA50dDpnO-B3C3qUMIB8p1iDSG0SfAZxCmWVdQhgTHv5OZK9iwTwnHpg3ecGZNSupj318jSkPvf-70Qv0QkoNFnlhJOqmy3Aj3sKIxh0OmCkoP6qzDq2jUbdUQKMj07kdT-Zev5xCPMe3pvUtSJRnflYa0dPw1LloutiKTDJFRZ9wlfikjG_sqDLRFkvbyEBMEHdN2f-BUaKUfwL"/>
+</div>
+</div>
+<!-- LPG Card -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant group hover:shadow-md transition-shadow">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-gold-accent text-4xl mb-4" data-icon="propane_tank">propane_tank</span>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-4">LPG Distribution</h3>
+<p class="text-slate-gray mb-8">
+                        Specializing in Liquefied Petroleum Gas for domestic and commercial use. Reliable supply chains for Propane and Butane mixes.
+                    </p>
+<div class="mt-auto pt-6 border-t border-outline-variant flex justify-between items-center">
+<span class="font-label-lg text-energy-blue">Propane / Butane</span>
+<span class="material-symbols-outlined text-slate-gray group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Market Reach Card -->
+<div class="md:col-span-4 bg-navy-deep p-8 rounded-xl text-surface-bright flex flex-col">
+<h4 class="font-headline-md text-headline-md mb-4">Nigerian Origins</h4>
+<p class="text-surface-variant mb-6 text-sm">
+                    Leveraging our strategic position in the Gulf of Guinea to serve global energy markets with Nigerian-sourced gas products.
+                </p>
+<div class="mt-auto h-32 rounded bg-surface-container/10 border border-surface-variant/20 flex items-center justify-center italic text-gold-accent text-center px-4">
+                    "Driving the African energy renaissance on a global scale."
+                </div>
+</div>
+<!-- Quality Assurance -->
+<div class="md:col-span-8 bg-surface-container-low p-8 rounded-xl border border-outline-variant flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-4">Standardized Excellence</h3>
+<p class="text-slate-gray">
+                        Our distribution protocols exceed international safety standards (ISO/IGC). Every shipment undergoes rigorous quality verification before departure to ensure caloric value and purity.
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded text-center">
+<span class="material-symbols-outlined text-energy-blue block mb-2" data-icon="verified_user">verified_user</span>
+<span class="text-label-sm uppercase font-bold text-navy-deep">ISO 9001</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded text-center">
+<span class="material-symbols-outlined text-energy-blue block mb-2" data-icon="security">security</span>
+<span class="text-label-sm uppercase font-bold text-navy-deep">ISPS CODE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach Map Section -->
+<section class="py-stack-lg bg-surface-off-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-navy-deep mb-4">Global Distribution Logistics</h2>
+<p class="text-slate-gray max-w-2xl mx-auto">
+                    Our fleet and chartering operations guarantee delivery to any safe port globally. From Lagos to Rotterdam, Singapore to Houston, we bridge the gap between supply and demand.
+                </p>
+</div>
+<div class="relative w-full h-[500px] bg-navy-deep rounded-2xl overflow-hidden shadow-xl border-4 border-surface-container-lowest">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center bg-no-repeat" data-alt="A stylized global map showing interconnected trade routes originating from Nigeria and stretching across the Atlantic to the Americas, and across the Indian Ocean to Asia. The map uses a sophisticated deep navy and gold color scheme with glowing nodes at major port locations. The aesthetic is modern, corporate, and emphasizes massive global reach." data-location="Global" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')"></div>
+<!-- Map Overlays -->
+<div class="absolute top-8 left-8 bg-navy-deep/80 backdrop-blur-md p-6 rounded-lg border border-gold-accent/30 z-20">
+<h5 class="text-gold-accent font-label-lg uppercase mb-4">Active Trade Routes</h5>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-gold-accent animate-pulse"></div>
+<span class="text-surface-bright text-sm">West Africa → Northern Europe</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-energy-blue"></div>
+<span class="text-surface-bright text-sm">West Africa → East Asia (LNG)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-gold-accent"></div>
+<span class="text-surface-bright text-sm">Regional West African Hubs</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-8 right-8 z-20">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-lg flex items-center gap-6">
+<div class="text-navy-deep">
+<div class="text-label-sm uppercase font-bold text-slate-gray">Fleet Status</div>
+<div class="text-headline-md font-bold">12 Vessels In Transit</div>
+</div>
+<span class="material-symbols-outlined text-gold-accent text-4xl" data-icon="directions_boat">directions_boat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Marketing & Sales CTA -->
+<section class="py-24 px-margin-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto bg-energy-blue rounded-3xl p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10">
+<span class="material-symbols-outlined text-[300px]" data-icon="language">language</span>
+</div>
+<div class="relative z-10 md:w-2/3">
+<h2 class="font-display-lg text-display-lg text-surface-bright mb-6">Partner with Nigeria's Energy Leader</h2>
+<p class="text-surface-container-high text-body-lg mb-10">
+                    Whether you require long-term SPA (Sale and Purchase Agreements) or spot market allocations for LPG and LNG, our trading desk provides the most competitive structures in the industry.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-surface-container-lowest text-navy-deep px-10 py-5 rounded font-bold uppercase tracking-widest hover:bg-gold-accent hover:text-navy-deep transition-all">Request a Quote</button>
+<button class="bg-navy-deep text-on-primary px-10 py-5 rounded font-bold uppercase tracking-widest hover:bg-primary-container transition-all">Download Specifications</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-navy-deep text-on-primary">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="font-headline-md text-headline-md font-bold text-surface-container-lowest mb-6 block">DENIGERLEON</a>
+<p class="text-on-surface-variant font-body-md text-sm leading-relaxed mb-6">
+                A leading global conglomerate committed to excellence in energy, agriculture, and industrial production. Headquartered in Nigeria, serving the world.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-gold-accent transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-gold-accent transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="hub">hub</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-gold-accent font-bold mb-6">Business Sectors</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="index.html">Petroleum Trading</a></li>
+<li><a class="text-gold-accent font-bold" href="gas.html">Gas Operations</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="refinery.html">Refining Services</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="agriculture.html">Agri-Products</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-gold-accent font-bold mb-6">Corporate</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="leadership.html">Sustainability</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="leadership.html">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="leadership.html">Investor Relations</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="leadership.html">Media Center</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-gold-accent font-bold mb-6">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-surface-bright transition-colors" href="#">Terms of Service</a></li>
+<li class="pt-6">
+<div class="text-label-sm text-slate-gray">© 2024 Denigerleon Company. All rights reserved.</div>
+</li>
+</ul>
+</div>
+</footer>
+<script>
+        // Simple scroll behavior for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('h-20');
+                header.classList.add('h-16');
+            } else {
+                header.classList.remove('py-2');
+                header.classList.add('h-20');
+                header.classList.remove('h-16');
+            }
+        });
+    </script>
+</body></html>
