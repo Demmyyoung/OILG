@@ -256,26 +256,29 @@
       <!-- Contact Form -->
       <div class="bg-white p-10 rounded-xl shadow-sm border border-outline-variant">
         <h3 class="font-headline-md text-navy-deep mb-6">Send Us a Message</h3>
-        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully! Our relations team will contact you shortly.'); this.reset();">
+        <form id="contact-form" class="space-y-6">
+          <input type="hidden" name="access_key" value="0263c884-4d0b-4f4e-9a25-49093ac8c294">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col gap-2">
               <label for="name" class="font-label-lg text-xs uppercase tracking-wider text-slate-gray">Your Name</label>
-              <input type="text" id="name" required class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="John Doe">
+              <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="John Doe">
             </div>
             <div class="flex flex-col gap-2">
               <label for="email" class="font-label-lg text-xs uppercase tracking-wider text-slate-gray">Your Email</label>
-              <input type="email" id="email" required class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="john@example.com">
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="john@example.com">
             </div>
           </div>
 
           <div class="flex flex-col gap-2">
             <label for="org" class="font-label-lg text-xs uppercase tracking-wider text-slate-gray">Organization</label>
-            <input type="text" id="org" class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="Company Name">
+            <input type="text" id="org" name="organization" class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="Company Name">
           </div>
 
           <div class="flex flex-col gap-2">
             <label for="subject" class="font-label-lg text-xs uppercase tracking-wider text-slate-gray">Subject</label>
-            <select id="subject" class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors">
+            <select id="subject" name="subject" class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors">
               <option>General Corporate Inquiry</option>
               <option>Petroleum Division Partnership</option>
               <option>Gas Operations & distribution</option>
@@ -286,7 +289,7 @@
 
           <div class="flex flex-col gap-2">
             <label for="message" class="font-label-lg text-xs uppercase tracking-wider text-slate-gray">Message</label>
-            <textarea id="message" rows="5" required class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="Describe your inquiry or proposal details..."></textarea>
+            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-surface-off-white border border-outline-variant focus:outline-none focus:border-gold-accent rounded-lg text-body-md text-navy-deep transition-colors" placeholder="Describe your inquiry or proposal details..."></textarea>
           </div>
 
           <button type="submit" class="w-full bg-gold-accent text-navy-deep hover:bg-gold-hover active:scale-95 transition-all py-4 rounded-lg uppercase tracking-widest font-bold font-label-lg shadow-md hover:shadow-lg">
@@ -356,6 +359,50 @@
                 card.querySelector('img').style.transform = 'scale(1)';
             });
         });
+
+        // Web3Forms AJAX submit handler
+        const form = document.getElementById('contact-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
+
+                // Show visual sending status on submit button
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.innerText;
+                btn.innerText = "SENDING...";
+                btn.disabled = true;
+
+                fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
+                    })
+                    .then(async (response) => {
+                        let json = await response.json();
+                        if (response.status == 200) {
+                            alert("Message sent successfully! Our relations team will contact you shortly.");
+                            form.reset();
+                        } else {
+                            console.log(response);
+                            alert(json.message || "Something went wrong!");
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error);
+                        alert("Network error, please try again.");
+                    })
+                    .finally(() => {
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    });
+            });
+        }
     </script>
 
 <script>
