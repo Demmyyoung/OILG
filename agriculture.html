@@ -212,10 +212,10 @@
 </header>
 
 <!-- Mobile Drawer Backdrop -->
-<div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+<div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[190] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
 
 <!-- Mobile Drawer/Overlay -->
-<div id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+<div id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[200] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
   <!-- Drawer Header -->
   <div class="flex justify-between items-center border-b border-white/10 pb-4">
     <div class="flex items-center gap-3"><img src="img/logo_transparent.png" alt="Denigerleon Logo" class="h-12 w-auto object-contain rounded"><span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span></div>
@@ -233,11 +233,11 @@
     
     <!-- Mobile Accordion Divisions -->
     <div class="w-full">
-      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
+      <button id="mobile-divisions-toggle" class="text-surface-bright/80 hover:text-gold-accent flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
         <span>Divisions: Agriculture</span>
-        <span id="mobile-divisions-arrow" class="rotate-180 material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+        <span id="mobile-divisions-arrow" class=" material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
       </button>
-      <div id="mobile-divisions-list" class="max-h-60 opacity-100 mt-4 flex flex-col gap-4 pl-4 mt-4 border-l border-white/10 transition-all duration-300 ease-in-out">
+      <div id="mobile-divisions-list" class="max-h-0 opacity-0 overflow-hidden flex flex-col gap-4 pl-4 border-l border-white/10 transition-all duration-300 ease-in-out">
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="petroleum.html">Petroleum</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="gas.html">Gas</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="refinery.html">Refinery</a>

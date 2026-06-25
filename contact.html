@@ -222,10 +222,10 @@
 </header>
 
 <!-- Mobile Drawer Backdrop -->
-<div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+<div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[190] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
 
 <!-- Mobile Drawer/Overlay -->
-<div id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[100] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
+<div id="mobile-drawer" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy-deep/98 backdrop-blur-lg z-[200] flex flex-col justify-between p-6 shadow-2xl transition-transform duration-300 transform translate-x-full md:hidden">
   <!-- Drawer Header -->
   <div class="flex justify-between items-center border-b border-white/10 pb-4">
     <div class="flex items-center gap-3"><img src="img/logo_transparent.png" alt="Denigerleon Logo" class="h-12 w-auto object-contain rounded"><span class="font-display-lg text-headline-md font-bold text-surface-bright tracking-tight">DENIGERLEON</span></div>
@@ -243,11 +243,11 @@
     
     <!-- Mobile Accordion Divisions -->
     <div class="w-full">
-      <button id="mobile-divisions-toggle" class="text-gold-accent font-bold flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
+      <button id="mobile-divisions-toggle" class="text-surface-bright/80 hover:text-gold-accent flex items-center justify-between w-full font-display-lg text-2xl uppercase tracking-wider focus:outline-none">
         <span>Divisions</span>
-        <span id="mobile-divisions-arrow" class="rotate-180 material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+        <span id="mobile-divisions-arrow" class=" material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
       </button>
-      <div id="mobile-divisions-list" class="max-h-60 opacity-100 mt-4 flex flex-col gap-4 pl-4 mt-4 border-l border-white/10 transition-all duration-300 ease-in-out">
+      <div id="mobile-divisions-list" class="max-h-0 opacity-0 overflow-hidden flex flex-col gap-4 pl-4 border-l border-white/10 transition-all duration-300 ease-in-out">
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="petroleum.html">Petroleum</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="gas.html">Gas</a>
         <a class="text-surface-bright/70 hover:text-gold-accent font-display-lg text-xl uppercase tracking-wider transition-colors" href="refinery.html">Refinery</a>
@@ -302,15 +302,23 @@
 
 
         <!-- Directory Info -->
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
-            <h5 class="text-navy-deep font-bold mb-2">General Inquiries</h5>
-            <p class="text-slate-gray text-body-sm mb-1 break-all">denigerleoncompany@gmail.com</p>
+            <h5 class="text-navy-deep font-bold mb-2 text-sm uppercase tracking-wider">General Inquiries</h5>
+            <a href="mailto:denigerleoncompany@gmail.com" class="text-slate-gray text-body-sm mb-1 break-all hover:text-gold-accent transition-colors block">denigerleoncompany@gmail.com</a>
           </div>
           <div>
-            <h5 class="text-navy-deep font-bold mb-2">Partnership Relations</h5>
-            <p class="text-slate-gray text-body-sm mb-1 break-all">partners@denigerleon.com</p>
-            <p class="text-slate-gray text-body-sm font-bold break-all">investors@denigerleon.com</p>
+            <h5 class="text-navy-deep font-bold mb-2 text-sm uppercase tracking-wider">Partnerships & Investors</h5>
+            <a href="mailto:partners@denigerleon.com" class="text-slate-gray text-body-sm mb-1 break-all hover:text-gold-accent transition-colors block">partners@denigerleon.com</a>
+            <a href="mailto:investors@denigerleon.com" class="text-slate-gray text-body-sm font-bold break-all hover:text-gold-accent transition-colors block">investors@denigerleon.com</a>
+          </div>
+          <div>
+            <h5 class="text-navy-deep font-bold mb-2 text-sm uppercase tracking-wider">Sales Department</h5>
+            <a href="mailto:Sales@denigerleon.com" class="text-slate-gray text-body-sm mb-1 break-all hover:text-gold-accent transition-colors block">Sales@denigerleon.com</a>
+          </div>
+          <div>
+            <h5 class="text-navy-deep font-bold mb-2 text-sm uppercase tracking-wider">Procurement Division</h5>
+            <a href="mailto:Procurement@denigerleon.com" class="text-slate-gray text-body-sm mb-1 break-all hover:text-gold-accent transition-colors block">Procurement@denigerleon.com</a>
           </div>
         </div>
       </div>
